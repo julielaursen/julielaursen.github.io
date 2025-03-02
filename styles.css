@@ -27,3 +27,8 @@
   color: #087f8c;
   text-decoration: none;
 }
+
+h1 {
+  font-family: Poppins, sans-serif;
+  font-size: large;
+}
