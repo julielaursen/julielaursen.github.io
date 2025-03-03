@@ -21,6 +21,8 @@
 .site-header nav li {
   display: inline;
   margin-left: 0.5rem;
+  font-family: Poppins, sans-serif;
+  font-size: 25px;
 }
 
 .site-header a {
