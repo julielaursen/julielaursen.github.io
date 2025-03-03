@@ -7,8 +7,9 @@
 }
 
 .site-header nav {
-  background-color: white;
+  background-color: #ffffff;
   padding: 0.5rem;
+  margin-left: auto;
 }
 
 .site-header nav ul {
@@ -22,7 +23,8 @@
   display: inline;
   margin-left: 0.5rem;
   font-family: Poppins, sans-serif;
-  font-size: 25px;
+  font-size: 30px;
+  font-style: bold;
 }
 
 .site-header a {
@@ -37,9 +39,32 @@
 h1 {
   font-family: Poppins, sans-serif;
   font-size: 90px;
+  margin: 20px;
+}
+
+hr {
+  margin-bottom: 40px;
 }
 
 .header-text {
   text-align: left;
   font-family: Poppins, sans-serif;
+  margin: 0;
+}
+
+.nav-left {
+  font-family: Poppins, sans-serif;
+  margin: 10%;
+  width: 200px;
+  line-height: 0.2;
+  font-weight: bold;
+}
+
+main {
+  margin: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
 }
