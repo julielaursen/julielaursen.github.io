@@ -41,6 +41,7 @@ h1 {
   font-size: 90px;
   margin: 20px;
   margin-bottom: 40px;
+  margin-top: 60px;
   align-items: center;
   text-align: center;
   animation: slideIn 1s ease-in-out;
@@ -135,7 +136,6 @@ footer {
   background-color: white;
   color: black !important; /* To-do: remove important */
   border: none;
-  padding: 20px 30px;
   margin-left: 20px;
   text-decoration: none;
 }
