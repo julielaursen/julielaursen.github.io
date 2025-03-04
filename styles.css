@@ -12,21 +12,6 @@
   margin-left: auto;
 }
 
-.site-header nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
-
-.site-header nav li {
-  display: inline;
-  margin-left: 0.5rem;
-  font-family: Poppins, sans-serif;
-  font-size: 30px;
-  font-style: bold;
-}
-
 .site-header a {
   color: #087f8c;
   text-decoration: none;
