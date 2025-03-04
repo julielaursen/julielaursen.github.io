@@ -75,8 +75,15 @@ hr {
 
 main {
   margin: 20px auto;
+  max-width: 1920px;
+  width: 85%;
+}
+
+footer {
   max-width: 1200px;
   width: 90%;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 
 .overlay {
