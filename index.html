@@ -21,8 +21,9 @@
           <!-- Overlay content -->
           <div class="overlay-content">
             <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
-            <a href="blog.html">Blog</a>
+            <!-- FIX: content is displaying on top of each other incorrectly -->
+            <!-- <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a> -->
           </div>
         </div>
         <span class="menu-btn" onclick="openNav()">☰</span>
@@ -31,10 +32,12 @@
 
     <script>
       function openNav() {
-        document.getElementById("myNav").style.display = "block"
+        console.log("openNav called")
+        document.getElementById("myNav").style.width = "100%"
       }
       function closeNav() {
-        document.getElementById("myNav").style.display = "none"
+        console.log("closeNav called")
+        document.getElementById("myNav").style.width = "0%"
       }
     </script>
     <hr />
