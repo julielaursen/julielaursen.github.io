@@ -122,14 +122,19 @@ main {
   font-size: 60px;
 }
 
-.openbtn {
+.menu-btn {
   font-size: 50px;
   cursor: pointer;
   background-color: white;
-  color: black;
+  color: black !important; /* To-do: remove important */
   border: none;
   padding: 20px 30px;
   margin-left: 20px;
+  text-decoration: none;
+}
+
+.menu-btn:hover {
+  color: black;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
