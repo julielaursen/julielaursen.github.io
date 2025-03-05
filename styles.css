@@ -72,6 +72,20 @@ footer {
   margin-left: 20px;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -157,6 +171,10 @@ footer {
 .resume-header {
   margin: 50px 80px;
   align-items: left;
+}
+
+.dark-mode-text {
+  font-size: 1rem;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
