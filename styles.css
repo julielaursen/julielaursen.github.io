@@ -3,8 +3,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  background: #ffffff; /* Default light mode background */
-  color: #000000; /* Default light mode text color */
 }
 
 .site-header nav {
