@@ -58,3 +58,20 @@ document.getElementById('dark-mode-toggle').addEventListener('click', () => {
 	localStorage.getItem('theme') === 'light' ? enableDarkMode() : disableDarkMode();
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+	const words = document.querySelectorAll(".word-carousel .word");
+	let currentIndex = 0;
+
+	function showNextWord() {
+	  words[currentIndex].classList.remove("active");
+	  currentIndex = (currentIndex + 1) % words.length;
+	  words[currentIndex].classList.add("active");
+	}
+
+	// Initially show the first word
+	words[currentIndex].classList.add("active");
+
+	// Change word every 3 seconds
+	setInterval(showNextWord, 2000);
+  });
