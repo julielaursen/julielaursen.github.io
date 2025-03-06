@@ -246,6 +246,15 @@ footer {
   font-size: 18px;
 }
 
+.social-media-container {
+  display: flex;
+  margin: 0 20px;
+}
+
+.social-media-icons {
+  display: block;
+}
+
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr; /* Single column on small screens */
