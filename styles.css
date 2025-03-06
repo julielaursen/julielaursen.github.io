@@ -1,13 +1,13 @@
 .site-header {
-  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
+  background: #ffffff; /* Default light mode background */
+  color: #000000; /* Default light mode text color */
 }
 
 .site-header nav {
-  background-color: #ffffff;
   padding: 0.5rem;
   margin-left: auto;
 }
@@ -17,8 +17,10 @@
   text-decoration: none;
 }
 
-.site-header a:hover {
-  color: purple;
+/* Default styles for header-text */
+.header-text {
+  display: block; /* Ensure it is displayed */
+  color: #000000; /* Default light mode text color */
 }
 
 h1 {

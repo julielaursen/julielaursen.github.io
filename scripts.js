@@ -3,11 +3,9 @@
 //
 
 function openNav() {
-    console.log("openNav called")
     document.getElementById("myNav").style.width = "100%"
   }
   function closeNav() {
-    console.log("closeNav called")
     document.getElementById("myNav").style.width = "0%"
   }
   
@@ -15,13 +13,20 @@ function openNav() {
 //    The Dark Mode System
 //
 
-// helper functions to toggle dark mode
 function enableDarkMode() {
 	document.body.classList.add('dark-mode');
+	const header = document.querySelector('.site-header');
+	if (header) {
+	  header.classList.add('dark-mode');
+	}
 	localStorage.setItem('theme', 'dark');
 }
 function disableDarkMode() {
 	document.body.classList.remove('dark-mode');
+	const header = document.querySelector('.site-header');
+	if (header) {
+	  header.classList.remove('dark-mode');
+	}
 	localStorage.setItem('theme', 'light');
 }
 
