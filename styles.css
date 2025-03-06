@@ -46,6 +46,10 @@ hr {
   margin-bottom: 10px;
 }
 
+.introduction {
+  margin: 0px 20px 30px 20px;
+}
+
 .header-text {
   text-align: left;
   font-family: Poppins, sans-serif;
@@ -244,11 +248,11 @@ footer {
 
 .social-media-container {
   display: flex;
-  margin: 0 20px;
+  margin: 20px 40px;
 }
 
 .social-media-icons {
-  display: block;
+  display: flex;
 }
 
 @media (max-width: 600px) {
