@@ -34,10 +34,11 @@ h1 {
 
 h2 {
   font-family: Poppins, sans-serif;
-  font-size: 45px;
-  margin: 20px 80px;
-  align-items: center;
-  text-align: center;
+  font-size: 40px;
+  margin-top: 150px;
+  margin-left: 20px;
+  align-items: left;
+  text-align: left;
   animation: slideDown 1s ease-in-out;
 }
 
@@ -207,6 +208,48 @@ footer {
 .word.active {
   top: 0;
   opacity: 1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(3, auto); /* Three rows */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item-header {
+  display: flex;
+  align-items: center;
+}
+
+.grid-item-header svg {
+  margin-right: 10px; /* Space between the icon and the header */
+}
+.grid-item h3 {
+  font-weight: 600; /* Semibold font */
+  margin: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
