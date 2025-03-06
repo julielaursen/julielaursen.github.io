@@ -35,6 +35,12 @@
     /* class used to hide elements that only need to be seen when dark mode is enabled */
     display: none;
   }
+  .dark-mode .grid-item-header h3 {
+    color: black;
+  }
+  .dark-mode .word-carousel .word {
+    color: #fff;
+  }
 }
 /*-- -------------------------- -->
   <---      Dark Mode Toggle      -->

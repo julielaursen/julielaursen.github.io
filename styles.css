@@ -185,10 +185,6 @@ footer {
   align-items: left;
 }
 
-.dark-mode-text {
-  font-size: 1rem;
-}
-
 .word-carousel {
   position: relative;
   height: 50px; /* Adjust as needed */
