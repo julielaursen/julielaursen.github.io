@@ -44,6 +44,10 @@
   .dark-mode .word-carousel .word {
     color: #fff;
   }
+
+  .dark-mode .footer-content {
+    color: #fff;
+  }
 }
 /*-- -------------------------- -->
   <---      Dark Mode Toggle      -->
