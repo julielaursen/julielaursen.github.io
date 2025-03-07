@@ -48,6 +48,10 @@
   .dark-mode .footer-content {
     color: #fff;
   }
+
+  .dark-mode .social-media-icons {
+    filter: invert(1); /* Invert colors for dark mode */
+  }
 }
 /*-- -------------------------- -->
   <---      Dark Mode Toggle      -->
