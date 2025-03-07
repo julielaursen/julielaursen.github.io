@@ -264,6 +264,12 @@ footer {
 
 .social-media-icons {
   display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.social-media-icons .dev-to-logo {
+  margin-left: -25px;
 }
 
 @media (max-width: 600px) {
