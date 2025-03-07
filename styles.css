@@ -70,6 +70,10 @@ main {
   width: 85%;
 }
 
+p {
+  font-size: 17px;
+}
+
 footer {
   max-width: 1200px;
   width: 90%;
@@ -244,6 +248,13 @@ footer {
   font-weight: 600; /* Semibold font */
   margin: 0;
   font-size: 18px;
+}
+
+.grid-item-body {
+  font-weight: 300;
+  color: dark-grey;
+  font-size: 14px;
+  margin: 10px 5px 0px 5px;
 }
 
 .social-media-container {

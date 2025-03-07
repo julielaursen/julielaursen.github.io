@@ -38,6 +38,9 @@
   .dark-mode .grid-item-header h3 {
     color: black;
   }
+  .dark-mode .grid-item-body {
+    color: black;
+  }
   .dark-mode .word-carousel .word {
     color: #fff;
   }
