@@ -50,7 +50,11 @@
   }
 
   .dark-mode .social-media-icons {
-    filter: invert(1); /* Invert colors for dark mode */
+    filter: invert(1);
+  }
+
+  .dark-mode .logo {
+    filter: invert(1);
   }
 }
 /*-- -------------------------- -->
