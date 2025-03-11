@@ -45,8 +45,12 @@
     color: #fff;
   }
 
+  .dark-mode .footer-container {
+    color: black;
+  }
+
   .dark-mode .footer-content {
-    color: #fff;
+    color: black;
   }
 
   .dark-mode .social-media-icons {

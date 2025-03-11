@@ -75,17 +75,16 @@ p {
 }
 
 footer {
-  max-width: 1200px;
-  width: 90%;
-  margin-top: 0px;
-  margin-left: 20px;
+  margin: 0px 40px;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
+  border-top: 1px solid #818181;
+  padding: 20px;
+  margin: 10px 20px;
 }
 
 .footer-content {
@@ -93,6 +92,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .overlay {
@@ -259,7 +264,7 @@ footer {
 
 .social-media-container {
   display: flex;
-  margin: 20px 40px;
+  padding: 20px;
 }
 
 .social-media-icons {
