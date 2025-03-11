@@ -74,6 +74,10 @@ p {
   font-size: 17px;
 }
 
+.introduction p {
+  line-height: 1.45;
+}
+
 footer {
   margin: 0px 40px;
 }
@@ -211,7 +215,7 @@ footer {
   text-align: center;
   font-size: 32px; /* Adjust as needed */
   opacity: 0;
-  transition: top 1s ease, opacity 1s ease;
+  transition: top 2s ease, opacity 1s ease;
 }
 
 .word.active {
