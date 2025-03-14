@@ -117,20 +117,13 @@ footer {
 }
 
 .overlay-content {
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: 25%;
   width: 100%;
-  text-align: center;
+  text-align: right;
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-.overlay-content a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
 }
 
 .overlay-content a:hover,
