@@ -75,3 +75,23 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Change word every 3 seconds
 	setInterval(showNextWord, 2000);
   });
+
+  /* TAB NAVIGATION */
+
+  function showTabContent(tabId) {
+  // Remove active class from all tabs
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach((tab) => tab.classList.remove('active'));
+
+  // Add active class to the clicked tab
+  const activeTab = document.querySelector(`.tab[onclick="showTabContent('${tabId}')"]`);
+  activeTab.classList.add('active');
+
+  // Hide all tab panes
+  const tabPanes = document.querySelectorAll('.tab-pane');
+  tabPanes.forEach((pane) => pane.classList.remove('active'));
+
+  // Show the selected tab pane
+  const activePane = document.getElementById(tabId);
+  activePane.classList.add('active');
+}

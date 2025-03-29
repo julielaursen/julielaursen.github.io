@@ -35,7 +35,7 @@ h1 {
 h2 {
   font-family: Poppins, sans-serif;
   font-size: 40px;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 20px;
   align-items: left;
   text-align: left;
@@ -257,6 +257,67 @@ footer {
   color: dark-grey;
   font-size: 14px;
   margin: 10px 5px 0px 5px;
+}
+
+/* Tab Section */
+.tab-section {
+  padding: 20px;
+  margin-bottom: 75px;
+  border-radius: 20px;
+}
+
+.tabs-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  flex: 1;
+  padding: 15px;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #e0e0e0;
+}
+
+.tab.active {
+  background-color: black;
+  color: white;
+}
+
+.tab-content {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
 }
 
 .social-media-container {
