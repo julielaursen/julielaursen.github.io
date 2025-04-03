@@ -148,27 +148,27 @@ footer {
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
+.overlay-content a {
+  font-size: 60px;
+  color: #f1f1f1;
+  text-decoration: none;
+  text-align: right;
+  margin-right: 45px;
+}
+
 .overlay-content a:hover,
 .overlay-content a:focus {
   color: #f1f1f1;
 }
 
 /* Position the close button (top right corner) */
-.overlay a {
+.overlay .close-btn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
   color: #f1f1f1;
   text-decoration: none;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
 }
 
 .menu-btn {
