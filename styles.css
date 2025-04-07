@@ -42,6 +42,16 @@ h2 {
   animation: slideDown 1s ease-in-out;
 }
 
+.skills-and-tools {
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-left: 20px;
+  align-items: left;
+  text-align: left;
+  animation: slideDown 1s ease-in-out;
+}
+
 hr {
   margin-bottom: 10px;
 }
@@ -275,6 +285,36 @@ footer {
   color: dark-grey;
   font-size: 14px;
   margin: 10px 5px 0px 5px;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill {
+  background-color: #f2f0ef;
+  padding: 0.05rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.skill-title {
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: black;
+  line-height: 1;
+}
+
+.skill-title::before {
+  content: "•";
+  color: black;
+  margin-right: 8px;
+  font-size: 30px;
 }
 
 /* Tab Section */
