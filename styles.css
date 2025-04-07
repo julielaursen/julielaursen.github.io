@@ -42,7 +42,7 @@ h2 {
   animation: slideDown 1s ease-in-out;
 }
 
-.skills-and-tools {
+.h2-body {
   font-family: Poppins, sans-serif;
   font-size: 40px;
   margin-top: 50px;
@@ -378,9 +378,75 @@ footer {
   display: block;
 }
 
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#contact-form label {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .social-media-container {
   display: flex;
   padding: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact-form button {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact-form button:hover {
+  background-color: black;
+  transform: translateY(-2px);
+}
+
+#contact-form button:active {
+  transform: translateY(0);
 }
 
 .social-media-icons {
