@@ -95,3 +95,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const activePane = document.getElementById(tabId);
   activePane.classList.add('active');
 }
+
+// Show or hide the "Back to Top" button based on scroll position
+window.addEventListener("scroll", function () {
+	const backToTopButton = document.getElementById("back-to-top");
+	if (window.scrollY > 200) {
+	  backToTopButton.style.display = "block"; // Show the button
+	} else {
+	  backToTopButton.style.display = "none"; // Hide the button
+	}
+  });
+  
+  // Scroll to the top when the "Back to Top" button is clicked
+  document.getElementById("back-to-top").addEventListener("click", function () {
+	window.scrollTo({
+	  top: 0,
+	  behavior: "smooth", // Smooth scrolling effect
+	});
+  });

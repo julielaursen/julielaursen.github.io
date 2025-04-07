@@ -389,6 +389,7 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 #contact-form {
@@ -447,6 +448,32 @@ footer {
 
 #contact-form button:active {
   transform: translateY(0);
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 180px;
+  right: 70px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 40%;
+  width: 40px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+#back-to-top:hover {
+  background-color: black;
+}
+
+#back-to-top:active {
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
 }
 
 .social-media-icons {
