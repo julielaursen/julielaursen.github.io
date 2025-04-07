@@ -262,41 +262,46 @@
           </p>
         </div>
       </div>
-      <h2 class="h2-body">Skills & Tools</h2>
-      <br />
-      <section class="tab-section">
+      <section class="tab-section skills-section">
+        <h2 class="h2-body">Skills & Tools</h2>
         <div class="tabs-container">
           <div class="tabs">
             <button
               class="tab skills-tab active"
-              onclick="showTabContent('software-development')"
+              onclick="showTabContent('skills-software-development', 'skills-tab')"
             >
               Software Development
             </button>
             <button
               class="tab skills-tab"
-              onclick="showTabContent('quality-assurance')"
+              onclick="showTabContent('skills-quality-assurance', 'skills-tab')"
             >
               Quality Assurance
             </button>
             <button
               class="tab skills-tab"
-              onclick="showTabContent('product-management')"
+              onclick="showTabContent('skills-product-management', 'skills-tab')"
             >
               Product Management
             </button>
             <button
               class="tab skills-tab"
-              onclick="showTabContent('marketing')"
+              onclick="showTabContent('skills-marketing', 'skills-tab')"
             >
               Digital Marketing
             </button>
-            <button class="tab skills-tab" onclick="showTabContent('devops')">
+            <button
+              class="tab skills-tab"
+              onclick="showTabContent('skills-devops', 'skills-tab')"
+            >
               DevOps
             </button>
           </div>
           <div class="tab-content">
-            <div id="software-development" class="tab-pane active">
+            <div
+              id="skills-software-development"
+              class="tab-pane skills-tab-pane active"
+            >
               <div class="skills-container">
                 <div class="skill">
                   <div class="skill-title">Typescript</div>
@@ -305,29 +310,17 @@
                   <div class="skill-title">Javascript</div>
                 </div>
                 <div class="skill">
-                  <div class="skill-title">HTML</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">CSS</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">Java</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">Python</div>
+                  <div class="skill-title">React</div>
                 </div>
                 <div class="skill">
                   <div class="skill-title">Git</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">React</div>
                 </div>
                 <div class="skill">
                   <div class="skill-title">SQL</div>
                 </div>
               </div>
             </div>
-            <div id="quality-assurance" class="tab-pane">
+            <div id="skills-quality-assurance" class="tab-pane skills-tab-pane">
               <div class="skills-container">
                 <div class="skill">
                   <div class="skill-title">Cypress</div>
@@ -336,23 +329,14 @@
                   <div class="skill-title">Selenium</div>
                 </div>
                 <div class="skill">
-                  <div class="skill-title">Robot Framework</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">Jest</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">Jmeter</div>
-                </div>
-                <div class="skill">
                   <div class="skill-title">Postman</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">Cucumber</div>
                 </div>
               </div>
             </div>
-            <div id="product-management" class="tab-pane">
+            <div
+              id="skills-product-management"
+              class="tab-pane skills-tab-pane"
+            >
               <div class="skills-container">
                 <div class="skill">
                   <div class="skill-title">Agile</div>
@@ -366,12 +350,9 @@
                 <div class="skill">
                   <div class="skill-title">Figma</div>
                 </div>
-                <div class="skill">
-                  <div class="skill-title">Slack</div>
-                </div>
               </div>
             </div>
-            <div id="marketing" class="tab-pane">
+            <div id="skills-marketing" class="tab-pane skills-tab-pane">
               <div class="skills-container">
                 <div class="skill">
                   <div class="skill-title">Canva</div>
@@ -381,31 +362,65 @@
                 </div>
               </div>
             </div>
-            <div id="devops" class="tab-pane">
+            <div id="skills-devops" class="tab-pane skills-tab-pane">
               <div class="skills-container">
-                <div class="skill">
-                  <div class="skill-title">Github Actions</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">Circle CI</div>
-                </div>
                 <div class="skill">
                   <div class="skill-title">Docker</div>
                 </div>
                 <div class="skill">
-                  <div class="skill-title">AWS</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">GCP</div>
-                </div>
-                <div class="skill">
-                  <div class="skill-title">Terraform</div>
+                  <div class="skill-title">Github Actions</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="tab-section experience-section">
+        <h2 class="h2-body">Experience</h2>
+        <div class="tabs-container">
+          <div class="tabs">
+            <button
+              class="tab experience-tab active"
+              onclick="showTabContent('experience-software-development', 'experience-tab')"
+            >
+              Software Development & DevOps
+            </button>
+            <button
+              class="tab experience-tab"
+              onclick="showTabContent('experience-quality-assurance', 'experience-tab')"
+            >
+              Quality Assurance
+            </button>
+            <button
+              class="tab experience-tab"
+              onclick="showTabContent('experience-product-management', 'experience-tab')"
+            >
+              Product Management & Digital Marketing
+            </button>
+          </div>
+          <div class="tab-content">
+            <div
+              id="experience-software-development"
+              class="tab-pane experience-tab-pane active"
+            >
+              <p>Software and DevOps Experience Content</p>
+            </div>
+            <div
+              id="experience-quality-assurance"
+              class="tab-pane experience-tab-pane"
+            >
+              <p>Quality Assurance Experience Content</p>
+            </div>
+            <div
+              id="experience-product-management"
+              class="tab-pane experience-tab-pane"
+            >
+              <p>Product Management & Digital Marketing Content</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="contact-me-container">
         <form id="contact-form">
           <h3>Contact Me</h3>

@@ -78,23 +78,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* TAB NAVIGATION */
 
-  function showTabContent(tabId) {
-  // Remove active class from all tabs
-  const tabs = document.querySelectorAll('.tab');
-  tabs.forEach((tab) => tab.classList.remove('active'));
-
-  // Add active class to the clicked tab
-  const activeTab = document.querySelector(`.tab[onclick="showTabContent('${tabId}')"]`);
-  activeTab.classList.add('active');
-
-  // Hide all tab panes
-  const tabPanes = document.querySelectorAll('.tab-pane');
-  tabPanes.forEach((pane) => pane.classList.remove('active'));
-
-  // Show the selected tab pane
-  const activePane = document.getElementById(tabId);
-  activePane.classList.add('active');
-}
+  function showTabContent(tabId, tabType) {
+	// Remove active class from all tabs of the specified type
+	const tabs = document.querySelectorAll(`.${tabType}`);
+	tabs.forEach((tab) => tab.classList.remove("active"));
+  
+	// Add active class to the clicked tab
+	const activeTab = document.querySelector(`.${tabType}[onclick="showTabContent('${tabId}', '${tabType}')"]`);
+	if (activeTab) {
+	  activeTab.classList.add("active");
+	}
+  
+	// Hide all tab panes of the specified type
+	const tabPanes = document.querySelectorAll(`.${tabType}-pane`);
+	tabPanes.forEach((pane) => pane.classList.remove("active"));
+  
+	// Show the selected tab pane
+	const activePane = document.getElementById(tabId);
+	if (activePane) {
+	  activePane.classList.add("active");
+	}
+  }
 
 // Show or hide the "Back to Top" button based on scroll position
 window.addEventListener("scroll", function () {
