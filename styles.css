@@ -382,10 +382,11 @@ footer {
   margin: 40px 40px;
 }
 
-.work-experience {
+.resume-section-header {
   font-size: 20px;
   margin-top: 0px;
 }
+
 .dev-experience {
   line-height: 1;
   max-width: 900px;
