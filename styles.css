@@ -15,10 +15,18 @@
   text-decoration: none;
 }
 
-/* Default styles for header-text */
 .header-text {
-  display: block; /* Ensure it is displayed */
-  color: #000000; /* Default light mode text color */
+  display: block;
+  color: #000000;
+  line-height: 3;
+}
+
+.nav-left {
+  font-family: Poppins, sans-serif;
+  margin: 10%;
+  width: 200px;
+  line-height: 0.5;
+  font-weight: bold;
 }
 
 h1 {
@@ -26,7 +34,7 @@ h1 {
   font-size: 90px;
   margin: 20px;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 100px;
   align-items: center;
   text-align: center;
   animation: slideIn 1s ease-in-out;
@@ -59,20 +67,6 @@ hr {
 
 .introduction {
   margin: 0px 20px 30px 20px;
-}
-
-.header-text {
-  text-align: left;
-  font-family: Poppins, sans-serif;
-  margin: 0;
-}
-
-.nav-left {
-  font-family: Poppins, sans-serif;
-  margin: 10%;
-  width: 200px;
-  line-height: 0.2;
-  font-weight: bold;
 }
 
 .language-btn {
@@ -380,9 +374,44 @@ footer {
 }
 
 /* Resume Container */
+.experience-tab-content {
+  padding: 40px 40px;
+  background: linear-gradient(45deg, #f5f5f5, white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px 40px;
+}
+
+.work-experience {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.education {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 .dev-experience {
   line-height: 1;
   max-width: 900px;
+  font-size: 14px;
+}
+
+.job-title {
+  line-height: 1;
+  max-width: 900px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 20px; /* Indent the title */
+  margin-top: 10px; /* Add spacing above the title */
+  margin-bottom: 5px; /* Add spacing below the title */
+  color: #333;
+}
+
+.company {
+  color: #333;
+  font-size: 15px;
 }
 
 .dev-experience p {
@@ -390,10 +419,16 @@ footer {
   color: #3b3b3b;
 }
 
+.degree {
+  color: #333;
+  font-size: 15px;
+  line-height: 0.2;
+}
+
 .dev-experience li {
   color: #3b3b3b;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
