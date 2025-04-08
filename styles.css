@@ -312,6 +312,21 @@ footer {
   font-size: 30px;
 }
 
+.current-tool .skill-title::before {
+  color: green; /* Green bullet for current tools */
+}
+
+.other-tool .skill-title::before {
+  color: blue; /* Blue bullet for other tools */
+}
+
+.skills-legend {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
 /* Tab Section */
 .tab-section {
   padding: 20px;
