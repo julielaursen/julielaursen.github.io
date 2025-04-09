@@ -36,6 +36,54 @@
           })
       }
     </script>
+    <!-- I think this needs to be served over a webserver for localization to work -->
+    <style>
+      #google_translate_element,
+      .skiptranslate {
+        display: none;
+      }
+      body {
+        top: 0 !important;
+      }
+    </style>
+
+    <div id="google_translate_element"></div>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "fr",
+            autoDisplay: false,
+            multilanguagePage: true,
+          },
+          "google_translate_element"
+        )
+      }
+      // Add an event listener to the button to trigger the language change
+      document.addEventListener("DOMContentLoaded", function () {
+        const translateButton = document.getElementById(
+          "google_translate_element"
+        )
+        translateButton.addEventListener("click", function () {
+          // Wait for the Google Translate widget to load
+          const interval = setInterval(() => {
+            const selectElement = document.querySelector(
+              "#google_translate_element select"
+            )
+            if (selectElement) {
+              selectElement.value = "fr" // Set the language to French
+              selectElement.dispatchEvent(new Event("change")) // Trigger the language change
+              clearInterval(interval) // Stop checking once the element is found
+            }
+          }, 100) // Check every 100ms
+        })
+      })
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
   </head>
   <body>
     <header class="site-header">
@@ -52,9 +100,8 @@
         <p class="nav-left">Marketing & Usability</p>
         <p class="nav-left">Project Management</p>
       </div>
+      <button id="google_translate_element" class="language-btn">DE</button>
       <nav>
-        <!-- TO-DO: Add language localization-->
-        <!-- <button id="language-toggle" class="language-btn">DE</button> -->
         <div id="myNav" class="overlay">
           <!-- Button to close the overlay navigation -->
           <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"
@@ -425,7 +472,7 @@
               id="experience-software-development"
               class="tab-pane experience-tab-pane active"
             >
-              <div class="dev-experience">
+              <div class="resume-experience">
                 <h3 class="resume-section-header">Work Experience</h3>
                 <h3 class="company">Updater (2022-2025)</h3>
                 <p class="job-title">Software Engineer in Test II</p>
@@ -528,7 +575,7 @@
               id="experience-quality-assurance"
               class="tab-pane experience-tab-pane"
             >
-              <div class="dev-experience">
+              <div class="resume-experience">
                 <h3 class="resume-section-header">Work Experience</h3>
                 <h3 class="company">Updater (2022-2025)</h3>
                 <p class="job-title">Software Engineer in Test II</p>
@@ -637,7 +684,7 @@
               id="experience-product-management"
               class="tab-pane experience-tab-pane"
             >
-              <div class="dev-experience">
+              <div class="resume-experience">
                 <h3 class="resume-section-header">
                   Work & Volunteer Experience
                 </h3>
