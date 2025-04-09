@@ -36,6 +36,7 @@
           <div class="overlay-content">
             <a href="marketing-portfolio.html">Marketing Portfolio</a>
             <a href="uiux-portfolio.html">UI/UX Portfolio</a>
+            <a href="marketing-portfolio.html">Developer Portfolio</a>
             <a href="../resume.html">Resume</a>
             <a href="../services.html">Services</a>
             <!-- <a href="blog.html">Blog</a> -->
@@ -46,7 +47,60 @@
     </header>
     <hr />
     <h1>Developer Portfolio</h1>
-    <main></main>
+    <main>
+      <h2 id="github-status">Github Status</h2>
+      <script>
+        // Get today's date
+        const today = new Date()
+        const formattedDate = today.toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+
+        // Update the h2 element with the date
+        const githubStatusHeading = document.getElementById("github-status")
+        githubStatusHeading.textContent = `Github Status as of ${formattedDate}`
+      </script>
+      <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+      <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+      />
+
+      <!-- Prepare a container for your calendar. -->
+      <div class="calendar">
+        <!-- Loading stuff -->
+        Loading...
+      </div>
+
+      <script>
+        GitHubCalendar(".calendar", "julie")
+
+        // or enable responsive functionality:
+        GitHubCalendar(".calendar", "julielaursen", { responsive: true })
+      </script>
+
+      <p>
+        &nbsp;<img
+          align="center"
+          src="https://github-readme-stats.vercel.app/api?username=julielaursen&show_icons=true&locale=en"
+          alt="julielaursen"
+        />
+        <img
+          align="left"
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=julielaursen&show_icons=true&locale=en&layout=compact"
+          alt="julielaursen"
+        />
+        <!-- <a href="https://github.com/ryo-ma/github-profile-trophy"
+          ><img
+            src="https://github-profile-trophy.vercel.app/?username=julielaursen"
+            alt="julielaursen"
+        /></a> -->
+      </p>
+    </main>
     <hr />
     <footer classname="footer-container">
       <div class="footer-content">
