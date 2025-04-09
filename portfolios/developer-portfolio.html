@@ -77,7 +77,11 @@
       <div class="calendar">Loading...</div>
 
       <script>
-        GitHubCalendar(".calendar", "julielaursen", { responsive: true })
+        GitHubCalendar(".calendar", "julielaursen", {
+          responsive: true,
+          global_stats: false, // To-Do: I'd like this to show but its giving incorrect data
+          tooltips: true,
+        })
       </script>
 
       <p>
