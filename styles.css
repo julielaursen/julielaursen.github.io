@@ -146,7 +146,6 @@ footer {
   position: relative;
   top: 25%;
   width: 100%;
-  /* text-align: center; /* this is what seems to make the words overlap* */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
@@ -177,7 +176,7 @@ footer {
   font-size: 30px;
   cursor: pointer;
   background-color: white;
-  color: black !important; /* To-do: remove important */
+  color: black;
   border: 2px solid black;
   border-radius: 30px;
   font-family: Poppins, sans-serif;
