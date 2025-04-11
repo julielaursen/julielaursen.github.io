@@ -18,7 +18,6 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card__heading {
@@ -34,6 +33,10 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 40px;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+  cursor: pointer;
 }
