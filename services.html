@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="services-styles.css" />
     <link rel="stylesheet" href="dark.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>My Portfolio</title>
@@ -33,14 +33,16 @@
           >
           <!-- Overlay content -->
           <div class="overlay-content">
-            <a href="portfolios/marketing-portfolio.html">Marketing Portfolio</a>
+            <a href="portfolios/marketing-portfolio.html"
+              >Marketing Portfolio</a
+            >
             <a href="portfolios/uiux-portfolio.html">UI/UX Portfolio</a>
             <a href="portfolios/developer-portfolio.html"
-            >Developer Portfolio</a
-          >
+              >Developer Portfolio</a
+            >
             <a href="resume.html">Resume</a>
             <a href="services.html">Services</a>
-            <!-- <a href="blog.html">Blog</a> --> 
+            <!-- <a href="blog.html">Blog</a> -->
           </div>
         </div>
         <button class="menu-btn" onclick="openNav()">MENU</button>
@@ -51,55 +53,55 @@
     <main>
       <div class="grid-container">
         <div class="grid-item">
-          <div class="grid-item-header">
+          <div class="grid-item__side--front">
             <h3>Accessibility Audit</h3>
+            <p class="grid-item-body">
+              I will review your website or application for compliance with WCAG
+              guidelines to ensure it is accessible to all users with clear,
+              practical recommendations you can implement. I will provide a
+              detailed report with recommendations for improvement.
+            </p>
           </div>
-          <p class="grid-item-body">
-            I will review your website or application for compliance with WCAG guidelines to ensure it is accessible
-            to all users with clear, practical recommendations you can implement.
-            I will provide a detailed report with recommendations
-            for improvement. 
-            
-            This includes testing for: 
-            <ul>
-              <li>Color contrast and visual presentation</li>
-              <li>Keyboard navigation and focus management</li>
-              <li>Screen reader compatibility with NVDA, Jaws, and VoiceOver</li>
-              <li>Form validation and error handling</li>
-              <li>Dynamic content and ARIA implementation</li>
-          </p>
+
+          <div class="grid-item__side--back">BACK</div>
         </div>
         <div class="grid-item">
-            <div class="grid-item-header">
-              <h3>Social Media Audit</h3>
-            </div>
-            <p class="grid-item-body">
-                I will review your social media presence to ensure it is engaging and effective. I will provide a detailed report with recommendations for improvement.
-                This includes reviewing:
-                <ul>
-                    <li>Content quality and consistency</li>
-                    <li>Engagement and follower growth</li>
-                    <li>SEO and SEM strategy</li>
-                    <li>Brand voice and tone</li>
-                    <li>Competitor analysis and market research</li>
-                </ul>
+          <div class="grid-item-header">
+            <h3>Social Media Audit</h3>
           </div>
-          <div class="grid-item">
-            <div class="grid-item-header">
-              <h3>Website Usability Audit</h3>
-            </div>
-            <p class="grid-item-body">
-                <p>I will review your website to ensure it is user-friendly and easy to navigate. 
-                I will provide a detailed report with recommendations for improvement.</p>
-                This includes reviewing:
-                <ul>
-                    <li>Content quality and consistency</li>
-                    <li>Error prevention</li>
-                    <li>Flexibility and efficiency of use</li>
-                    <li>Aesthetics</li>
-                    <li>Help and documentation</li>
-                </ul>
+          <p class="grid-item-body">
+            I will review your social media presence to ensure it is engaging
+            and effective. I will provide a detailed report with recommendations
+            for improvement. This includes reviewing:
+          </p>
+
+          <ul>
+            <li>Content quality and consistency</li>
+            <li>Engagement and follower growth</li>
+            <li>SEO and SEM strategy</li>
+            <li>Brand voice and tone</li>
+            <li>Competitor analysis and market research</li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <div class="grid-item-header">
+            <h3>Website Usability Audit</h3>
           </div>
+          <p class="grid-item-body"></p>
+          <p>
+            I will review your website to ensure it is user-friendly and easy to
+            navigate. I will provide a detailed report with recommendations for
+            improvement.
+          </p>
+          This includes reviewing:
+          <ul>
+            <li>Content quality and consistency</li>
+            <li>Error prevention</li>
+            <li>Flexibility and efficiency of use</li>
+            <li>Aesthetics</li>
+            <li>Help and documentation</li>
+          </ul>
+        </div>
       </div>
     </main>
     <hr />
@@ -154,3 +156,21 @@
     <script src="scripts.js"></script>
   </body>
 </html>
+
+<!-- <div class="grid-item-header">
+  <h3>Accessibility Audit</h3>
+</div>
+<p class="grid-item-body">
+  I will review your website or application for compliance with WCAG guidelines to ensure it is accessible
+  to all users with clear, practical recommendations you can implement.
+  I will provide a detailed report with recommendations
+  for improvement. 
+  
+  This includes testing for: 
+  <ul>
+    <li>Color contrast and visual presentation</li>
+    <li>Keyboard navigation and focus management</li>
+    <li>Screen reader compatibility with NVDA, Jaws, and VoiceOver</li>
+    <li>Form validation and error handling</li>
+    <li>Dynamic content and ARIA implementation</li>
+</p> -->
