@@ -167,6 +167,8 @@ to avoid conflict with the close button on smaller screens */
   gap: 20px; /*
 Space between grid items */
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .grid-item {
@@ -183,6 +185,7 @@ Space between grid items */
   transition: all 0.9s;
   perspective: 1000px;
   -moz-perspective: 1000px;
+  height: 400px;
 }
 
 .grid-item__side--front,
