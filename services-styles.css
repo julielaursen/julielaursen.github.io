@@ -210,22 +210,24 @@ Space between grid items */
   font-family: Poppins, sans-serif;
   font-size: 14px;
   color: white;
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 5px;
 }
 
 .grid-item__side--front {
   background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
-  background-color: white;
   color: black;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .grid-item__side--back {
   background: linear-gradient(
-    to bottom,
-    #4caf50,
-    #388e3c
+    to top,
+    #2e7d32,
+    #1b5e20
   ); /* Accessible green gradient */
   color: white;
   transform: rotateY(180deg);
@@ -263,10 +265,10 @@ header */
 
 .see-more {
   position: absolute;
-  bottom: 30px; /* Position near the bottom */
-  right: 30px; /* Position near the right */
   font-size: 14px;
   font-weight: bold;
+  bottom: 30px;
+  right: 30px;
   color: darkblue; /* Highlight the text */
   cursor: pointer; /* Change cursor to pointer */
   text-decoration: none;
