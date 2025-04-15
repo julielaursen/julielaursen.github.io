@@ -1,4 +1,4 @@
-.row {
+.row-marketing {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -7,7 +7,6 @@
 }
 
 .card-marketing {
-  background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -19,14 +18,25 @@
   align-items: center;
   overflow: hidden;
   text-align: center;
+  background-image: url("images/devopsdays.webp");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  position: relative;
+  transition: filter 0.3s ease-in-out;
+  filter: grayscale(100%);
 }
 
 .card__heading {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%); /* Adjust for centering */
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: bold;
   color: black;
   margin: 0;
-  padding: 20px;
 }
 
 .card__details {
@@ -38,4 +48,9 @@
 .card-marketing:hover {
   transform: translateY(-1rem);
   cursor: pointer;
+  filter: grayscale(0%);
+}
+
+.card-marketing:hover .card__heading {
+  color: #0175b2;
 }
