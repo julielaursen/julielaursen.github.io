@@ -54,3 +54,16 @@
 .card-marketing:hover .card__heading {
   color: #0175b2;
 }
+
+.ux-header {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.ux-intro {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
