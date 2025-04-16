@@ -67,3 +67,49 @@
   text-align: center;
   margin-bottom: 4rem;
 }
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.github-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.github-stats,
+.most-used-languages {
+  flex: 1; /* Allow both sections to take equal space */
+  min-width: 300px;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.github-stats img,
+.most-used-languages img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .github-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .github-stats,
+  .most-used-languages {
+    max-width: 100%;
+  }
+}
