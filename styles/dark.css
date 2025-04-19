@@ -35,6 +35,11 @@
     /* class used to hide elements that only need to be seen when dark mode is enabled */
     display: none;
   }
+
+  .dark-mode #contact-form h3 {
+    color: black;
+  }
+
   .dark-mode .grid-item-header h3 {
     color: black;
   }
