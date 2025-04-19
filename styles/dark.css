@@ -60,6 +60,22 @@
   .dark-mode .logo {
     filter: invert(1);
   }
+
+  .dark-mode .resume-section-header {
+    color: black; /* Set the text color to black */
+  }
+
+  .dark-mode .company {
+    color: black; /* Set the text color to black */
+  }
+
+  .dark-mode .job-title {
+    color: black; /* Set the text color to black */
+  }
+
+  .dark-mode .job-title ul li {
+    color: black; /* Set the text color to black */
+  }
 }
 /*-- -------------------------- -->
   <---      Dark Mode Toggle      -->
