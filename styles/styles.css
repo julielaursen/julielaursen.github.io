@@ -450,6 +450,37 @@ footer {
   line-height: 1.5;
 }
 
+/* Credly Link */
+
+.credly {
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+  margin: 20px auto; /* Add spacing above and below */
+}
+
+.credly a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.1s ease;
+}
+
+.credly-icon {
+  width: 60px;
+  height: auto;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-top: 3px;
+}
+
+.credly-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
 /* Contact Me */
 
 .contact-me-container {
