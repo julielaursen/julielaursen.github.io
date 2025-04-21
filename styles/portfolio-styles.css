@@ -102,6 +102,29 @@
   max-width: 100%;
 }
 
+.social-media-image-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Add padding around the grid */
+}
+
+.social-media-image-grid img {
+  width: 100%; /* Make images responsive */
+  height: 150px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensure images are cropped proportionally */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.social-media-image-grid img:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
 @media (max-width: 768px) {
   .github-container {
     flex-direction: column;
