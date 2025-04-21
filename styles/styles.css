@@ -106,6 +106,8 @@ p {
   line-height: 1.45;
 }
 
+/* Footer */
+
 footer {
   margin: 0px 40px;
 }
@@ -127,6 +129,45 @@ footer {
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+.sitemap {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.sitemap h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sitemap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sitemap ul li {
+  margin-bottom: 5px;
+}
+
+.sitemap ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sitemap ul li a:hover {
+  color: #065a63;
+}
+
+.footer-contact-me a {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+/* Curtain Menu */
 
 .overlay {
   height: 100%;
@@ -617,15 +658,15 @@ footer {
   gap: 25px;
 }
 
-.github-logo:active {
+.github-logo:hover {
   transform: translateY(-5px); /* Raise the button when clicked */
 }
 
-.notion-logo:active {
+.notion-logo:hover {
   transform: translateY(-5px); /* Raise the button when clicked */
 }
 
-.linkedin-logo:active {
+.linkedin-logo:hover {
   transform: translateY(-5px); /* Raise the button when clicked */
 }
 
