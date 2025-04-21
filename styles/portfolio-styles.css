@@ -140,26 +140,6 @@
   transform: scale(1.05);
 }
 
-/*marketing back button*/
-
-.marketing-back-btn {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 12px;
-  cursor: pointer;
-  text-decoration: none;
-  display: block;
-  margin: 20px auto;
-}
-
-.marketing-back-btn:hover {
-  background-color: black;
-  color: white;
-}
-
 @media (max-width: 768px) {
   .github-container {
     flex-direction: column;
