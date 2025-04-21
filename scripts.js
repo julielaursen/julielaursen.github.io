@@ -117,3 +117,17 @@ window.addEventListener("scroll", function () {
 	  behavior: "smooth", // Smooth scrolling effect
 	});
   });
+
+  function filterSkills() {
+  const searchInput = document.getElementById("skills-search").value.toLowerCase();
+  const skills = document.querySelectorAll(".skill");
+
+  skills.forEach((skill) => {
+    const skillTitle = skill.querySelector(".skill-title").textContent.toLowerCase();
+    if (skillTitle.includes(searchInput)) {
+      skill.style.display = "block"; // Show matching skills
+    } else {
+      skill.style.display = "none"; // Hide non-matching skills
+    }
+  });
+}

@@ -283,6 +283,28 @@ footer {
 }
 
 /* Skills Section */
+
+.skills-search-section {
+  text-align: left;
+  margin: 20px 0;
+}
+
+#skills-search {
+  width: 100%;
+  max-width: 400px;
+  padding: 4px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+#skills-search:focus {
+  border-color: #0073e6; /* Highlight border on focus */
+}
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
