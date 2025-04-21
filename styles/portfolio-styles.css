@@ -1,3 +1,7 @@
+.introduction {
+  margin: 0px 20px 30px 20px;
+}
+
 .row-marketing {
   display: flex;
   justify-content: center;
@@ -104,25 +108,33 @@
 
 .social-media-image-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(150px, 1fr)
-  ); /* Responsive grid */
-  gap: 20px; /* Space between grid items */
-  padding: 20px; /* Add padding around the grid */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .social-media-image-grid img {
   width: 100%; /* Make images responsive */
   height: 150px; /* Set a fixed height for uniformity */
   object-fit: cover; /* Ensure images are cropped proportionally */
-  border-radius: 10px; /* Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  transition: transform 0.3s ease; /* Add a hover effect */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .social-media-image-grid img:hover {
   transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Button for DevOpsDays Linked invitation */
+.devopsdays-linkedin-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.devopsdays-linkedin:hover {
+  background-color: #065a63;
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
