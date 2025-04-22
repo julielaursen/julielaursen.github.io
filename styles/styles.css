@@ -726,6 +726,16 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-contact-me {
+    margin-bottom: 40px;
+  }
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(-10%);
