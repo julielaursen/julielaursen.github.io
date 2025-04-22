@@ -331,20 +331,19 @@ footer {
 /* Skills Section */
 
 .skills-search-section {
-  text-align: left;
-  margin: 20px 0;
+  width: 100%;
+  margin-bottom: 1.25rem;
 }
 
 #skills-search {
+  box-sizing: border-box;
   width: 100%;
-  max-width: 400px;
-  padding: 4px;
+  padding: 5px;
   font-size: 16px;
   border: 2px solid #ccc;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   transition: border-color 0.3s ease;
-  box-sizing: border-box;
 }
 
 #skills-search:focus {
