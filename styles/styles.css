@@ -674,6 +674,32 @@ footer {
   margin-left: -25px;
 }
 
+/* Responsive Header Styling */
+@media (max-width: 768px) {
+  .site-header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .header-text {
+    display: none; /* Hide the header-text paragraphs on smaller screens */
+  }
+
+  .site-header nav {
+    margin: 10px 0; /* Add spacing around the navigation */
+  }
+
+  .logo {
+    width: 50px; /* Reduce the logo size for smaller screens */
+    height: auto;
+  }
+
+  .menu-btn {
+    font-size: 20px; /* Adjust the menu button size */
+    padding: 8px 16px; /* Adjust padding for better fit */
+  }
+}
+
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr; /* Single column on small screens */
