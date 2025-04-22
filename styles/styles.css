@@ -115,19 +115,19 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 20px;
-  margin: 10px 20px;
+  box-sizing: border-box;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .sitemap {
@@ -163,9 +163,14 @@ footer {
 }
 
 .footer-contact-me a {
+  display: flex;
   font-family: Poppins, sans-serif;
   font-size: 14px;
   color: #333;
+}
+
+.copyright {
+  text-align: left; /* Center-align the text */
 }
 /* Curtain Menu */
 
