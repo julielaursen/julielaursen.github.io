@@ -67,19 +67,23 @@
   }
 
   .dark-mode .resume-section-header {
-    color: black; /* Set the text color to black */
+    color: black;
   }
 
   .dark-mode .company {
-    color: black; /* Set the text color to black */
+    color: black;
   }
 
   .dark-mode .job-title {
-    color: black; /* Set the text color to black */
+    color: black;
   }
 
   .dark-mode .job-title ul li {
-    color: black; /* Set the text color to black */
+    color: black;
+  }
+
+  .dark-mode .credly a {
+    color: white;
   }
 }
 /*-- -------------------------- -->
