@@ -63,25 +63,7 @@ p {
 .introduction p {
   line-height: 1.45;
 }
-footer {
-  margin: 0px 40px;
-}
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  padding: 20px;
-  margin: 10px 20px;
-}
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -289,26 +271,161 @@ header */
   box-sizing: border-box;
 }
 
+/* Footer */
+
+.footer-container {
+  background-color: #f9f9f9;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  font-family: Poppins, serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 40px;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.footer-section {
+  flex: 1 1 25%; /* Each section takes up 30% of the width */
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .social-media-icons {
   display: flex;
+  gap: 15px;
+}
+
+.social-media-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+.sitemap {
+  text-align: center;
+}
+
+.sitemap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.sitemap ul li {
+  flex: 1 1 45%; /* Two columns on larger screens */
+}
+
+.sitemap ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sitemap ul li a:hover {
+  color: #065a63;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.footer-contact-me {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 25px;
+  justify-content: center;
+  margin-top: 0;
+  text-align: center;
 }
-.github-logo:active {
-  transform: translateY(-5px); /* Raise the button when
-clicked */
+
+.footer-contact-me a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
 }
-.notion-logo:active {
-  transform: translateY(-5px); /* Raise the
-button when clicked */
+
+.footer-contact-me a:hover {
+  color: #065a63;
 }
-.linkedin-logo:active {
-  transform: translateY(-5px); /*
-Raise the button when clicked */
+
+#dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px auto;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-.social-media-icons .dev-to-logo {
-  margin-left: -25px;
+
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow wrapping for medium screens */
+    justify-content: center; /* Center-align sections */
+    gap: 10px; /* Add spacing between sections */
+  }
+
+  .footer-section {
+    flex: 1 1 45%; /* Two sections per row */
+  }
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%; /* Each section takes full width */
+    align-items: center;
+  }
+
+  .sitemap ul li {
+    flex: 1 1 100%; /* Stack items vertically */
+  }
+
+  #dark-mode-toggle {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sitemap ul li {
+    flex: 1 1 100%; /* Each item takes up the full width on smaller screens */
+  }
+}
+
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr; /* Single column on small screens */
