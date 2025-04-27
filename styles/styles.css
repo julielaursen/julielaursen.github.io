@@ -115,6 +115,7 @@ p {
 }
 
 .footer-content {
+  font-family: Poppins, serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -355,6 +356,7 @@ p {
   position: relative;
   height: 50px; /* Adjust as needed */
   overflow: hidden;
+  font-family: Poppins, serif; /* Example font */
 }
 
 .word {
@@ -409,6 +411,8 @@ p {
 }
 
 .grid-item-body {
+  font-family: Poppins, serif;
+  font-size: 17px !important;
   font-weight: 300;
   color: dark-grey;
   font-size: 14px;
