@@ -85,6 +85,26 @@
   .dark-mode .credly a {
     color: white;
   }
+
+  .dark-mode .sitemap {
+    color: white;
+  }
+
+  .dark-mode .sitemap ul li a {
+    color: white;
+  }
+
+  .dark-mode .footer-contact-me {
+    color: white;
+  }
+
+  .dark-mode .footer-email a {
+    color: white;
+  }
+
+  .dark-mode .copy {
+    color: white;
+  }
 }
 /*-- -------------------------- -->
   <---      Dark Mode Toggle      -->
