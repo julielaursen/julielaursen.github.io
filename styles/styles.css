@@ -419,6 +419,21 @@ p {
   margin: 10px 5px 0px 5px;
 }
 
+.grid-item-link {
+  display: block; /* Make the link cover the entire card */
+  text-decoration: none;
+  color: inherit;
+}
+
+.grid-item-link:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: inherit; /* Keep the text color consistent */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Add hover effect for the card */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance hover effect */
+}
 /* Skills Section */
 
 .skills-search-section {
