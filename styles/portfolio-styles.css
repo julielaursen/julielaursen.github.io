@@ -140,6 +140,59 @@
   transform: scale(1.05);
 }
 
+/* responsive design mocks */
+
+.responsive-intro {
+  text-align: center;
+}
+
+.mockup-gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center; /* Center the gallery items */
+  gap: 20px; /* Add spacing between items */
+  padding: 20px;
+}
+
+.mockup-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px; /* Limit the width of each item */
+}
+
+.mockup-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 300px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mockup-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.mockup-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #555; /* Optional: Add a subtle hover effect */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
 @media (max-width: 768px) {
   .github-container {
     flex-direction: column;
