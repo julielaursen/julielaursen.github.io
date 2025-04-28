@@ -82,6 +82,19 @@
   overflow: hidden;
 }
 
+/* developer portfolio */
+
+.grid-item a {
+  display: block; /* Make the link cover the entire grid item */
+  text-decoration: none; /* Remove underline from the link */
+  color: black; /* Inherit the text color from the parent */
+}
+
+.grid-item a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .github-container {
   display: flex;
   align-items: flex-start;
