@@ -195,17 +195,6 @@
   color: #333;
 }
 
-a {
-  color: darkblue;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #555; /* Optional: Add a subtle hover effect */
-  text-decoration: underline; /* Optional: Add underline on hover */
-}
-
 @media (max-width: 768px) {
   .github-container {
     flex-direction: column;
