@@ -195,6 +195,51 @@
   color: #333;
 }
 
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+  background-color: black; /* Invert colors on hover */
+  color: white;
+  cursor: pointer;
+}
+
+.linkedin-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Space between images */
+  padding: 20px;
+  justify-items: center; /* Center images horizontally */
+}
+
+.linkedin-posts-grid img {
+  width: 100%; /* Make images responsive */
+  max-width: 400px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.linkedin-posts-grid img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
 @media (max-width: 768px) {
   .github-container {
     flex-direction: column;
