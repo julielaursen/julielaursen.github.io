@@ -118,16 +118,90 @@ window.addEventListener("scroll", function () {
 	});
   });
 
-  function filterSkills() {
-  const searchInput = document.getElementById("skills-search").value.toLowerCase();
-  const skills = document.querySelectorAll(".skill");
 
-  skills.forEach((skill) => {
-    const skillTitle = skill.querySelector(".skill-title").textContent.toLowerCase();
-    if (skillTitle.includes(searchInput)) {
-      skill.style.display = "block"; // Show matching skills
+function filterSkills() {
+  const searchInput = document.getElementById("skills-search").value.toLowerCase();
+
+  // If the search input is empty, reset everything
+  if (!searchInput) {
+    resetTabsAndSkills();
+    return; // Exit the function early
+  }
+
+  // Select all tab panes and skills
+  const allTabPanes = document.querySelectorAll(".skills-tab-pane");
+  const allSkills = document.querySelectorAll(".skills-container .skill");
+
+  let matchFound = false;
+
+  allTabPanes.forEach((pane) => {
+    const skillsInPane = pane.querySelectorAll(".skill");
+    let paneHasMatch = false;
+
+    skillsInPane.forEach((skill) => {
+      const skillTitle = skill.querySelector(".skill-title").textContent.toLowerCase();
+      if (skillTitle.includes(searchInput)) {
+        skill.style.display = "block"; // Show matching skills
+        paneHasMatch = true;
+        matchFound = true;
+      } else {
+        skill.style.display = "none"; // Hide non-matching skills
+      }
+    });
+
+    // Activate the tab pane if it has a match
+    if (paneHasMatch) {
+      pane.classList.add("active");
+      const tabId = pane.id;
+      const correspondingTab = document.querySelector(`.skills-tab[onclick*="${tabId}"]`);
+      if (correspondingTab) {
+        correspondingTab.classList.add("active");
+      }
     } else {
-      skill.style.display = "none"; // Hide non-matching skills
+      pane.classList.remove("active");
+      const tabId = pane.id;
+      const correspondingTab = document.querySelector(`.skills-tab[onclick*="${tabId}"]`);
+      if (correspondingTab) {
+        correspondingTab.classList.remove("active");
+      }
     }
   });
+
+  // If no matches are found, reset everything
+  if (!matchFound) {
+    resetTabsAndSkills();
+  }
 }
+
+function resetTabsAndSkills() {
+  const allTabPanes = document.querySelectorAll(".skills-tab-pane");
+  const allSkills = document.querySelectorAll(".skills-container .skill");
+  const allTabs = document.querySelectorAll(".skills-tab");
+
+  // Reset all tabs and panes
+  allTabPanes.forEach((pane) => {
+    pane.classList.remove("active");
+    pane.style.display = ""; // Reset display property
+  });
+
+  // Reset all skills
+  allSkills.forEach((skill) => {
+    skill.style.display = "block"; // Show all skills
+  });
+
+  // Deactivate all tabs
+  allTabs.forEach((tab) => {
+    tab.classList.remove("active");
+  });
+
+  // Activate the default tab (e.g., the first tab)
+  const defaultTab = document.querySelector(".skills-tab");
+  const defaultPaneId = defaultTab.getAttribute("onclick").match(/'([^']+)'/)[1];
+  const defaultPane = document.getElementById(defaultPaneId);
+
+  if (defaultTab && defaultPane) {
+    defaultTab.classList.add("active");
+    defaultPane.classList.add("active");
+  }
+}
+
