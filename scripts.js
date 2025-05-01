@@ -205,3 +205,11 @@ function resetTabsAndSkills() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+	const searchInput = document.getElementById("skills-search");
+  
+	// Listen for input changes (including when the "X" button is clicked)
+	searchInput.addEventListener("input", () => {
+	  filterSkills(); // Call the filterSkills function whenever the input changes
+	});
+  });
