@@ -431,8 +431,7 @@ p {
 }
 
 .grid-item:hover {
-  transform: translateY(-5px); /* Add hover effect for the card */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance hover effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 /* Skills Section */
 
