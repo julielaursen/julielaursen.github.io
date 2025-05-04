@@ -3,11 +3,18 @@
 //
 
 function openNav() {
-    document.getElementById("myNav").style.width = "100%"
+  const nav = document.getElementById("myNav");
+  if (nav) {
+    nav.style.width = "100%"; // Set the width to 100% to make the overlay visible
   }
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%"
+}
+
+function closeNav() {
+  const nav = document.getElementById("myNav");
+  if (nav) {
+    nav.style.width = "0%"; // Set the width to 0% to hide the overlay
   }
+}
   
 //
 //    The Dark Mode System
@@ -119,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const backToTopButton = document.getElementById("back-to-top");
 if (backToTopButton) {
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 600) {
       backToTopButton.style.display = "block"; // Show the button
     } else {
       backToTopButton.style.display = "none"; // Hide the button
