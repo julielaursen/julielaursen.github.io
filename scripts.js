@@ -88,26 +88,32 @@ document.addEventListener("DOMContentLoaded", function () {
   /* TAB NAVIGATION */
 
   function showTabContent(tabId, tabType) {
-	// Remove active class from all tabs of the specified type
-	const tabs = document.querySelectorAll(`.${tabType}`);
-	tabs.forEach((tab) => tab.classList.remove("active"));
-  
-	// Add active class to the clicked tab
-	const activeTab = document.querySelector(`.${tabType}[onclick="showTabContent('${tabId}', '${tabType}')"]`);
-	if (activeTab) {
-	  activeTab.classList.add("active");
-	}
-  
-	// Hide all tab panes of the specified type
-	const tabPanes = document.querySelectorAll(`.${tabType}-pane`);
-	tabPanes.forEach((pane) => pane.classList.remove("active"));
-  
-	// Show the selected tab pane
-	const activePane = document.getElementById(tabId);
-	if (activePane) {
-	  activePane.classList.add("active");
-	}
+  // Check if there are any tabs of the specified type
+  const tabs = document.querySelectorAll(`.${tabType}`);
+  const tabPanes = document.querySelectorAll(`.${tabType}-pane`);
+
+  if (tabs.length === 0 || tabPanes.length === 0) {
+    return; // Exit if there are no tabs or tab panes
   }
+
+  // Remove active class from all tabs of the specified type
+  tabs.forEach((tab) => tab.classList.remove("active"));
+
+  // Add active class to the clicked tab
+  const activeTab = document.querySelector(`.${tabType}[onclick="showTabContent('${tabId}', '${tabType}')"]`);
+  if (activeTab) {
+    activeTab.classList.add("active");
+  }
+
+  // Hide all tab panes of the specified type
+  tabPanes.forEach((pane) => pane.classList.remove("active"));
+
+  // Show the selected tab pane
+  const activePane = document.getElementById(tabId);
+  if (activePane) {
+    activePane.classList.add("active");
+  }
+}
 
   /* BACK TO TOP BUTTON */
 const backToTopButton = document.getElementById("back-to-top");
@@ -188,6 +194,11 @@ function resetTabsAndSkills() {
   const allSkills = document.querySelectorAll(".skills-container .skill");
   const allTabs = document.querySelectorAll(".skills-tab");
 
+  // Check if tabs and tab panes exist
+  if (allTabPanes.length === 0 || allTabs.length === 0 || allSkills.length === 0) {
+    return; // Exit if there are no tabs, tab panes, or skills
+  }
+
   // Reset all tabs and panes
   allTabPanes.forEach((pane) => {
     pane.classList.remove("active");
@@ -206,12 +217,14 @@ function resetTabsAndSkills() {
 
   // Activate the default tab (e.g., the first tab)
   const defaultTab = document.querySelector(".skills-tab");
-  const defaultPaneId = defaultTab.getAttribute("onclick").match(/'([^']+)'/)[1];
-  const defaultPane = document.getElementById(defaultPaneId);
+  if (defaultTab) {
+    const defaultPaneId = defaultTab.getAttribute("onclick").match(/'([^']+)'/)[1];
+    const defaultPane = document.getElementById(defaultPaneId);
 
-  if (defaultTab && defaultPane) {
-    defaultTab.classList.add("active");
-    defaultPane.classList.add("active");
+    if (defaultPane) {
+      defaultTab.classList.add("active");
+      defaultPane.classList.add("active");
+    }
   }
 }
 
