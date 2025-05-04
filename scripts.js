@@ -51,13 +51,14 @@ function detectColorScheme() {
 // run on page load
 detectColorScheme();
 
-// add event listener to the dark mode button toggle
-document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+const darkModeToggle = document.getElementById("dark-mode-toggle");
+if (darkModeToggle) {
+  darkModeToggle.addEventListener("click", () => {
     console.log('dark mode toggle clicked');
-	// on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
 	localStorage.getItem('theme') === 'light' ? enableDarkMode() : disableDarkMode();
-});
 
+  });
+}
 
 document.addEventListener("DOMContentLoaded", function () {
 	const words = document.querySelectorAll(".word-carousel .word");
