@@ -14,21 +14,29 @@ function openNav() {
 //
 
 function enableDarkMode() {
-	document.body.classList.add('dark-mode');
-	const header = document.querySelector('.site-header');
-	if (header) {
-	  header.classList.add('dark-mode');
-	}
-	localStorage.setItem('theme', 'dark');
+  document.body.classList.add('dark-mode');
+
+  // Check if the header exists before applying dark mode
+  const header = document.querySelector('.site-header');
+  if (header) {
+    header.classList.add('dark-mode');
+  }
+
+  localStorage.setItem('theme', 'dark');
 }
+
 function disableDarkMode() {
-	document.body.classList.remove('dark-mode');
-	const header = document.querySelector('.site-header');
-	if (header) {
-	  header.classList.remove('dark-mode');
-	}
-	localStorage.setItem('theme', 'light');
+  document.body.classList.remove('dark-mode');
+
+  // Check if the header exists before removing dark mode
+  const header = document.querySelector('.site-header');
+  if (header) {
+    header.classList.remove('dark-mode');
+  }
+
+  localStorage.setItem('theme', 'light');
 }
+
 
 // determines a new users dark mode preferences
 function detectColorScheme() {

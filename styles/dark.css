@@ -82,6 +82,10 @@
     color: black;
   }
 
+  .dark-mode .education-body {
+    color: black;
+  }
+
   .dark-mode .credly a {
     color: white;
   }
