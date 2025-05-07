@@ -1,0 +1,258 @@
+img {
+  display: block;
+}
+
+/****************************
+ Typography
+****************************/
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  color: #000;
+  font-size: 80px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #638475;
+  font-size: 36px;
+}
+
+h2 a {
+  text-decoration: underline;
+}
+
+a {
+  color: #638475;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #30b77a;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* Needs hover and/or focus state */
+a.button,
+button {
+  background-color: #dbb195;
+  color: #413820;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1rem 2rem;
+}
+
+/****************************
+ Header
+****************************/
+
+.logo {
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 1.5rem;
+}
+
+.logo a {
+  color: #fff;
+}
+
+.header {
+  background-color: #413820;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* Contrast between email nav link and background too low */
+nav a {
+  color: #807350;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+/****************************
+ Hero
+****************************/
+
+.hero {
+  align-items: center;
+  background-image: url("../images/accessibility-images/zion.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: #fff;
+  padding: 0 2rem;
+}
+
+/****************************
+ Home Sections
+****************************/
+
+.text_band {
+  padding: 4rem;
+  text-align: center;
+}
+
+.features {
+  text-align: center;
+}
+
+.features div {
+  background-color: #e6e8e8;
+  padding-top: 3rem;
+}
+
+.features .alt_color {
+  background-color: #638475;
+  color: #fff;
+}
+
+.features .alt_color h2 {
+  color: #fff;
+}
+
+.features .alt_color a {
+  color: #fff;
+}
+
+.features img {
+  margin: 1rem auto 0;
+  width: 60%;
+}
+
+/****************************
+ Footer
+****************************/
+
+/* Font size too small */
+.footer {
+  background-color: #413820;
+  color: #fff;
+  font-size: 10px;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 1.5rem 0;
+}
+
+.footer a {
+  color: #dbb195;
+  display: inline-block;
+}
+
+/* Needs to be larger */
+.footer .social img {
+  height: 20px;
+  width: 20px;
+}
+
+/****************************
+ Contact
+****************************/
+
+.contact {
+  background-color: #e6e8e8;
+  padding: 1rem 4rem 5rem;
+  text-align: center;
+}
+
+.contact h1 {
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.wrapper {
+  margin-top: 5rem;
+}
+
+/****************************
+ Forms
+****************************/
+
+form {
+  margin-bottom: 6rem;
+}
+
+label {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+label,
+input,
+textarea {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+/* Needs focus, hover style */
+button {
+  border: none;
+  margin-top: 2rem;
+}
+
+/****************************
+ Media Queries
+****************************/
+
+@media (min-width: 600px) {
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  footer p {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form {
+    width: 50%;
+  }
+}
