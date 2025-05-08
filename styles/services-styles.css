@@ -164,7 +164,6 @@ Space between grid items */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.9s;
   perspective: 1000px;
   -moz-perspective: 1000px;
@@ -182,7 +181,7 @@ Space between grid items */
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 0.6s ease;
+  /* transition: all 0.8s ease-in; */
   padding: 30px 10px;
 }
 
@@ -217,11 +216,11 @@ Space between grid items */
 }
 
 .grid-item:hover .grid-item__side--front {
-  transform: rotateY(180deg);
+  animation: rotateFront 1.2s cubic-bezier(0.3, 0, 0.1, 1) forwards; /* Adjusted easing */
 }
 
 .grid-item:hover .grid-item__side--back {
-  transform: rotateY(0);
+  animation: rotateBack 1.2s cubic-bezier(0.3, 0, 0.1, 1) forwards; /* Adjusted easing */
 }
 
 */ .grid-item-header {
@@ -477,5 +476,32 @@ and position the close button again, so they don't overlap */
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes rotateFront {
+  0% {
+    transform: rotateY(0);
+  }
+  30% {
+    transform: rotateY(90deg); /* Rotate halfway quickly */
+    easing: ease-in;
+  }
+  100% {
+    transform: rotateY(180deg); /* Complete the rotation slowly */
+    easing: ease-out;
+  }
+}
+
+@keyframes rotateBack {
+  0% {
+    transform: rotateY(180deg);
+  }
+  30% {
+    transform: rotateY(90deg); /* Rotate halfway quickly */
+    easing: ease-in;
+  }
+  100% {
+    transform: rotateY(0); /* Complete the rotation slowly */
+    easing: ease-out;
   }
 }
