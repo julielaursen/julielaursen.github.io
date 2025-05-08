@@ -37,22 +37,17 @@ h1 {
 h2 {
   font-family: Poppins, sans-serif;
   font-size: 40px;
-  margin-top: 100px;
-  margin-left: 20px;
-  align-items: left;
-  text-align: left;
+  margin-top: 80px;
+  margin: 20px 0;
+  text-align: center;
   animation: slideDown 1s ease-in-out;
 }
 .h2-body {
   font-family: Poppins, sans-serif;
   font-size: 40px;
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-bottom: 40px;
-  align-items: left;
-  text-align: left;
   animation: slideDown 1s ease-in-out;
 }
+
 hr {
   margin-bottom: 10px;
 }
@@ -61,8 +56,8 @@ p {
   font-size: 17px;
 }
 .introduction {
-  margin: 0px 20px 30px 20px;
-  line-height: 1.5;
+  margin: 40px 60px;
+  line-height: 1.6;
 }
 
 .overlay {
@@ -181,7 +176,6 @@ Space between grid items */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* transition: all 0.8s ease-in; */
   padding: 30px 10px;
 }
 
@@ -216,11 +210,11 @@ Space between grid items */
 }
 
 .grid-item:hover .grid-item__side--front {
-  animation: rotateFront 1.2s cubic-bezier(0.3, 0, 0.1, 1) forwards; /* Adjusted easing */
+  animation: rotateFront 1s cubic-bezier(0.4, 0, 0.2, 1) forwards; /* Adjusted easing */
 }
 
 .grid-item:hover .grid-item__side--back {
-  animation: rotateBack 1.2s cubic-bezier(0.3, 0, 0.1, 1) forwards; /* Adjusted easing */
+  animation: rotateBack 1s cubic-bezier(0.4, 0, 0.2, 1) forwards; /* Adjusted easing */
 }
 
 */ .grid-item-header {
@@ -229,11 +223,10 @@ Space between grid items */
   justify-content: center;
 }
 .grid-item-header svg {
-  margin-right: 10px; /* Space between the icon and the
-header */
+  margin-right: 10px;
 }
 .grid-item h3 {
-  font-weight: 600; /* Semibold font */
+  font-weight: 600;
   margin: 0;
   font-size: 24px;
 }
@@ -266,6 +259,15 @@ header */
   cursor: pointer; /* Change cursor to pointer */
   text-decoration: underline;
   transition: color 0.3s ease;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  max-width: 90%;
+  box-sizing: border-box;
 }
 
 .social-media-container {
