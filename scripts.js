@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const backToTopButton = document.getElementById("back-to-top");
 if (backToTopButton) {
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 600) {
+    if (window.scrollY > 1000) {
       backToTopButton.style.display = "block"; // Show the button
     } else {
       backToTopButton.style.display = "none"; // Hide the button
