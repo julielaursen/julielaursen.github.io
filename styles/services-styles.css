@@ -273,6 +273,13 @@ iframe {
   box-sizing: border-box;
 }
 
+.usability-image-container {
+  background-image: url("../images/a12.gif"), url("../images/a1.gif"),
+    url("../images/a3.gif"), url("../images/a6.gif"), url("../images/a7.gif");
+  background-position: 5% 10%, 30% 50%, 60% 20%, 80% 70%, 95% 40%; /* Adjusted positions */
+  background-repeat: no-repeat;
+}
+
 .social-media-container {
   display: flex;
   padding: 20px;

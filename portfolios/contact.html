@@ -1,8 +1,10 @@
+<!-- FYI: Contact page does not fill the page in responsive mode-->
 <!DOCTYPE html>
-<html>
+<html lang="">
+  <!--lang should not be empty -->
   <head>
     <meta charset="UTF-8" />
-    <!-- No title or lang -->
+    <title>Title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,75 +13,72 @@
     />
     <link href="../styles/bad-styles.css" rel="stylesheet" />
   </head>
-
   <body>
     <div class="header">
       <p class="logo"><a href="index.html">Company Name</a></p>
       <nav>
-        <!-- Nav links don't go anywhere, all should be the same type (links/buttons) with the same hover states' -->
         <a href="#">About</a>
         <a href="#">FAQ</a>
-        <a href="contact.html" class="button">Contact</a>
+        <a href="#" class="button">Contact</a>
       </nav>
     </div>
 
-    <div>
-      <!-- Hero escapes left right margins in responsive mode, H1 gets cut off -->
-      <div class="hero">
-        <h1>National Parks</h1>
-      </div>
-
-      <section class="text_band">
-        <h1>Discover America's Story</h1>
-        <p>
-          Beatae suscipit velit minima rem pariatur dolor deleniti nihil atque
-          et esse.
-        </p>
-        <!-- Button text is not descriptive -->
-        <!-- Button does not have a focus style -->
-        <a href="#" class="button">Click Here</a>
-      </section>
-      <!-- Only Big Bend image is centered in the div -->
-      <!-- Arches does not have the same link styling (underline, font style) -->
-      <!-- Arches has h2 heading, should be h3 -->
-      <!-- Alt text is not descriptive -->
-      <div class="features">
-        <div>
-          <h3><a href="#">Yosemite National Park</a></h3>
-          <p>California</p>
-          <img src="../images/accessibility-images/yosemite.jpg" alt="image" />
-        </div>
-        <div class="alt_color">
-          <h3><a href="#">Acadia National Park</a></h3>
-          <p>Maine</p>
-          <img src="../images/accessibility-images/acadia.jpg" alt="image" />
-        </div>
-        <!-- When you click on the name input and then scroll the border scrolls with you -->
-        <div class="alt_color">
-          <h3><a href="#">Big Bend National Park</a></h3>
-          <p>Texas</p>
-          <img src="../images/accessibility-images/big_bend.jpg" alt="image" />
-        </div>
-        <div>
-          <h2><a href="#">Arches National Park</a></h2>
-          <p>Utah</p>
-          <img src="../images/accessibility-images/arches.jpg" alt="image" />
-        </div>
+    <div class="contact">
+      <!-- h2 is low contrast-->
+      <h2>CONTACT US</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <!-- no required fields-->
+      <!-- no success or error messages related to form-->
+      <div class="wrapper">
+        <form action="fakefile.js">
+          <!-- id should be name, not input-->
+          <!-- no autocomplete-->
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            id="input"
+            placeholder="Type your name."
+          />
+          <!-- id should be email, not input-->
+          <!-- no autocomplete-->
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            id="input"
+            placeholder="Type your email."
+          />
+          <!-- Label and text missing for this attribute-->
+          <!-- Can drag the textarea outside the parent container-->
+          <textarea
+            id="message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <!-- Button is not descriptive -->
+          <button type="submit">Click</button>
+        </form>
+        <section>
+          <p>Aperiam repellat, architecto facere.</p>
+          <!-- low contrast, needs more than color contrast to distinguish as a link, add hover or focus-->
+          <a href="mailto:hello@fakeemail.com">hello@fakeemail.com</a>
+        </section>
+        <section>
+          <p>Aperiam repellat, architecto facere.</p>
+          <p>1(888)555-4444</p>
+        </section>
       </div>
     </div>
-    <!-- Links are too small for focus, especially on responsive-->
-    <!-- Social media images dont have alt text-->
+
     <div class="footer">
       <div class="social">
-        <a href="#"
-          ><img src="../images/accessibility-images/instagram.svg"
-        /></a>
-        <a href="#"><img src="../images/accessibility-images/twitter.svg" /></a>
-        <a href="#"><img src="../images/accessibility-images/youtube.svg" /></a>
+        <a href="#"><img src="images/instagram.svg" /></a>
+        <a href="#"><img src="images/twitter.svg" /></a>
+        <a href="#"><img src="images/youtube.svg" /></a>
       </div>
       <div>
-        <!-- Text is too small-->
-        <!-- We should have a site map so users have multiple ways of accessing pages-->
+        <!-- font size is too small at under 10px-->
         <p>Photography credits:</p>
         <p>
           <a
