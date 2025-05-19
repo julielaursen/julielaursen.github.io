@@ -1,4 +1,4 @@
-Developer Portfolio Website
+# Developer Portfolio Website
 
 THIS IS A WORK IN PROGRESS- UNFINISHED
 
@@ -8,13 +8,14 @@ This portfolio is a collection of artifacts from my work in my UX/UI college pro
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Table of Contents](#table-of-contents)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Running Tests](#running-tests)
-- [Continuous Integration](#continuous-integration)
+- [Developer Portfolio Website](#developer-portfolio-website)
+  - [Project Overview](#project-overview)
+  - [Table of Contents](#table-of-contents)
+  - [Technologies Used](#technologies-used)
+  - [Project Structure](#project-structure)
+  - [Installation](#installation)
+  - [Running Tests](#running-tests)
+  - [Continuous Integration](#continuous-integration)
 
 ## Technologies Used
 
