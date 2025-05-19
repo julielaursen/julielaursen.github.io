@@ -1,11 +1,3 @@
-# julielaursen.github.io
-
-Developer Portfolio Website
-
-THIS IS A WORK IN PROGRESS- UNFINISHED
-
-# julielaursen.github.io
-
 Developer Portfolio Website
 
 THIS IS A WORK IN PROGRESS- UNFINISHED
@@ -16,15 +8,13 @@ This portfolio is a collection of artifacts from my work in my UX/UI college pro
 
 ## Table of Contents
 
-- [julielaursen.github.io](#julielaursengithubio)
-- [julielaursen.github.io](#julielaursengithubio-1)
-  - [Project Overview](#project-overview)
-  - [Table of Contents](#table-of-contents)
-  - [Technologies Used](#technologies-used)
-  - [Project Structure](#project-structure)
-  - [Installation](#installation)
-  - [Running Tests](#running-tests)
-  - [Continuous Integration](#continuous-integration)
+- [Project Overview](#project-overview)
+- [Table of Contents](#table-of-contents)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Running Tests](#running-tests)
+- [Continuous Integration](#continuous-integration)
 
 ## Technologies Used
 
