@@ -366,7 +366,8 @@ p {
   text-align: center;
   font-size: 32px; /* Adjust as needed */
   opacity: 0;
-  transition: top 2s ease, opacity 1s ease;
+  transition: top 2s ease;
+  /* , opacity 1s ease; */
 }
 
 .word.active {
@@ -438,6 +439,17 @@ p {
 .skills-search-section {
   width: 100%;
   margin-bottom: 1.25rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 #skills-search {
