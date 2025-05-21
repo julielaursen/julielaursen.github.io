@@ -221,7 +221,7 @@
     auto-fit,
     minmax(300px, 1fr)
   ); /* Responsive grid */
-  gap: 20px; /* Space between images */
+  gap: 40px; /* Space between images */
   padding: 20px;
   justify-items: center; /* Center images horizontally */
 }
