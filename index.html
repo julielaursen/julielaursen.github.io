@@ -25,12 +25,22 @@
           .getElementById("contact-form")
           .addEventListener("submit", function (event) {
             event.preventDefault()
-            emailjs.sendForm("service_jrg8s3k", "template_suetk8d", this).then(
+            const formMessage = document.getElementById("form-message") // <-- Add this line
+
+            // Send both emails and wait for both to finish
+            Promise.all([
+              emailjs.sendForm("service_jrg8s3k", "template_6x2ogna", this),
+              emailjs.sendForm("service_jrg8s3k", "template_s9jf7h6", this),
+            ]).then(
               () => {
-                console.log("SUCCESS!")
+                formMessage.textContent = "Message sent successfully!"
+                formMessage.style.color = "green"
+                this.reset()
               },
               (error) => {
-                console.log("FAILED...", error)
+                formMessage.textContent =
+                  "Failed to send message. Please try again."
+                formMessage.style.color = "red"
               }
             )
           })
@@ -865,6 +875,10 @@
 
           <button type="submit" class="contact-me-btn">Send</button>
         </form>
+        <div
+          id="form-message"
+          style="margin-top: 1rem; font-weight: bold"
+        ></div>
       </section>
     </main>
     <!-- Back to Top Button -->
