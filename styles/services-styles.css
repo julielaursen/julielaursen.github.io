@@ -280,6 +280,62 @@ iframe {
   background-repeat: no-repeat;
 }
 
+/* Accessibility Portfolio */
+
+.table-responsive {
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow-x: auto;
+}
+
+.accessibility-findings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.accessibility-findings-table th,
+.accessibility-findings-table td {
+  border: 1px solid #e0e0e0;
+  padding: 0.6rem 0.4rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.accessibility-findings-table th {
+  background: #d3e2f1; /* Slightly darker blue for header */
+  font-weight: bold;
+}
+
+.accessibility-findings-table tr:nth-child(even) {
+  background: #f7fafd;
+}
+
+@media (max-width: 900px) {
+  .accessibility-findings-table th,
+  .accessibility-findings-table td {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .accessibility-findings-table {
+    font-size: 0.85rem;
+    min-width: 700px;
+  }
+  .accessibility-findings-table th,
+  .accessibility-findings-table td {
+    padding: 0.3rem 0.15rem;
+  }
+}
+
 .social-media-container {
   display: flex;
   padding: 20px;
