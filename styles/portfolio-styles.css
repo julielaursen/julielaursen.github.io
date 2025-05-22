@@ -1,5 +1,11 @@
 .introduction {
   margin: 0px 20px 30px 20px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+h2 {
+  margin-top: 4rem;
 }
 
 .row-marketing {
@@ -238,6 +244,63 @@
 .linkedin-posts-grid img:hover {
   transform: scale(1.05); /* Slight zoom on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* Add to portfolio-styles.css */
+.social-calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.social-calendar-table th,
+.social-calendar-table td {
+  border: 1px solid #e0e0e0;
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.social-calendar-table th {
+  background: #e0e0e0;
+  font-weight: bold;
+}
+
+.social-calendar-table tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+.fake-short-link {
+  color: #0077cc;
+  text-decoration: underline dotted;
+  cursor: pointer;
+}
+.fake-short-link:hover {
+  color: #005999;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .social-calendar-table th,
+  .social-calendar-table td {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .calendar {
+    overflow-x: auto;
+  }
+  .social-calendar-table {
+    font-size: 0.85rem;
+    min-width: 700px;
+  }
 }
 
 @media (max-width: 768px) {
