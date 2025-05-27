@@ -106,6 +106,79 @@ p {
   line-height: 1.45;
 }
 
+/* Portfolios section */
+.portfolios-section {
+  margin: 3rem 0 2rem 0;
+  padding: 0 1rem;
+}
+
+.portfolios-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+  max-width: 180px;
+  min-height: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  padding: 2rem 1.5rem;
+  text-decoration: none;
+  color: #222;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+  transform: translateY(-4px) scale(1.02);
+  color: #1a73e8;
+}
+
+.portfolio-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.25rem;
+}
+
+.portfolio-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin-top: auto;
+  margin-bottom: 0.5em;
+}
+
+.badge {
+  display: inline-block;
+  background: #f7f7f7;
+  color: #444;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 0.2em 0.7em;
+  margin-left: 0.5em;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  align-self: flex-start;
+}
+
 /* Footer */
 
 .footer-container {
