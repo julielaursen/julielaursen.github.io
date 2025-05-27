@@ -733,6 +733,7 @@ p {
   justify-content: center; /* Center the icon horizontally */
   align-items: center; /* Center the icon vertically */
   margin: 20px auto; /* Add spacing above and below */
+  margin-bottom: 80px;
 }
 
 .credly a {
