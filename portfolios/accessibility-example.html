@@ -79,7 +79,7 @@
         <a href="https://wave.webaim.org/">WAVE</a>, and <a href="https://www.nvaccess.org/about-nvda/">NVDA</a> to ensure compliance
         with WCAG 2.1 AA standards. I also included automated accessibility checks using Cypress.io, a programming framework that simulates how users interact with a website in a browser. Once I identify problems, I prioritize them based on their severity and how much they affect the user experience, especially for people with disabilities. 
       </div>
-      <iframe
+      <!-- <iframe
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuCMIVx19ca7edsxm57AY_5YwRQvQ-_k7JenXZUuySmDdkQo_wcR09pXOqIKOxVQ/pubhtml?gid=1943846836&single=true"
         width="100%"
         height="400"
@@ -87,25 +87,23 @@
         style="border: 1px solid #ccc"
         allowfullscreen
       >
-      </iframe>
+      </iframe> -->
 
       <div style="overflow-x:auto;">
         <div class="table-responsive">
         <!-- TO-DO: replace iframe with a table-->
-        <!-- <table class="accessibility-findings-table">
+        <table class="accessibility-findings-table">
           <thead>
             <tr>
               <th>Impact</th>
               <th>Theme</th>
-              <th>Component/Item</th>
+              <th>Item</th>
               <th>WCAG Criteria</th>
               <th>Conformance Level</th>
               <th>Description</th>
               <th>Items to fix</th>
               <th>Fix recommendations</th>
-              <th>Testing Method(s)</th>
               <th>Webpage</th>
-              <th>Date captured</th>
             </tr>
           </thead>
           <tbody>
@@ -118,9 +116,7 @@
               <td>WCAG AA requires a contrast ratio of at least 4.5 to 1 for normal text. The text for the links on the nav bar have a constrast of 2.47:1. The header over the hero image has a contrast of 1:1. The white text color over the grid body colors of #638475 is 1.66:1. On the contact page, the email link has a contrast of 3.35:1.</td>
               <td>4</td>
               <td>Increase contrast in the nav links and the text over the dark green background images in the grid. Add a shadow around the H1 or darken the background of the hero image.</td>
-              <td>Both</td>
               <td>/intentionally-bad-site.html</td>
-              <td>5/8/2025</td>
             </tr>
             <tr>
               <td>Serious</td>
@@ -131,9 +127,7 @@
               <td>WCAG A requires the default language of each page to be programatically determined. One sufficient way to achieve this is by setting the lang attribute on the html element. This allows braille translation software to substitute and insert control codes as necessary. Speech synthesizers that support multiple language will be also able to adapt to the pronunciation and syntax specific to the langauge of the page.</td>
               <td>2</td>
               <td>Add &lt;html lang="en"&gt; for English to the home page and instead of lang="" on contact.html, replace with en</td>
-              <td>Both</td>
               <td>/intentionally-bad-site.html, /contact.html</td>
-              <td>5/8/2025</td>
             </tr>
             <tr>
               <td>Serious</td>
@@ -144,9 +138,7 @@
               <td>WCAG A requires Web pages have titles that describe topic or purpose. Contact.html has a page title of just the name title and the home page does not have a title.</td>
               <td>2</td>
               <td>Add title of "Contact Us - Julie's Fake Company" in contact.html and title of "Julie's Fake Company" in the home page</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html, /contact.html</td>
-              <td>5/8/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -157,9 +149,7 @@
               <td>As noted in technique H42, headings are used in a hierarchical layout with h3 as a subsection of h2, which is a subsection of h1. Skipping heading ranks can be confusing and should be avoided where possible as this can confuse screen readers. Additionally multiple h1s should be used in a meaningful hierarchy, such as in different sections of a page. Headings at the same level should all be consistent.</td>
               <td>3</td>
               <td>Change "Discover America's Story" from h1 to h2. This resolves the fact that there are multiple h1s on the home page and provides the correct nested hierarchy. In contact.html, consider changing the "Contact me" to H1 so that the page does not begin with an H2. Change the heading for Arches National Park to h3.</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html</td>
-              <td>5/8/2025</td>
             </tr>
             <tr>
               <td>Minor</td>
@@ -170,9 +160,7 @@
               <td>Font size should not be below 12px for secondary content. This is not a WCAG guideline but this was flagged by WAVE.</td>
               <td>1</td>
               <td>Increase font size in footer from 10px to 12px</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html, /contact.html</td>
-              <td>5/8/2025</td>
             </tr>
             <tr>
               <td>Critical</td>
@@ -183,9 +171,7 @@
               <td>Using something like alt="image" or alt="chart" fails to convey the actual purpose or content of the image</td>
               <td>4</td>
               <td>Change the alt text of the national park images to reference the park in the image. Add alt text to the social media icons.</td>
-              <td>Both</td>
               <td>/intentionally-bad-site.html</td>
-              <td>5/9/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -196,9 +182,7 @@
               <td>Buttons do not have a visible focus state, making it difficult for keyboard users to navigate</td>
               <td>1</td>
               <td>add a visible :focus style to the css, maybe adding a outline or changing the background-color</td>
-              <td>Manual</td>
               <td></td>
-              <td>5/9/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -209,9 +193,7 @@
               <td>Navigation links do not have a visible focus state, making it difficult for keyboard users to navigate</td>
               <td>2</td>
               <td>add a visible :focus style to the css, maybe adding a outline or changing the background-color</td>
-              <td>Manual</td>
               <td></td>
-              <td>5/9/2025</td>
             </tr>
             <tr>
               <td>Serious</td>
@@ -222,9 +204,7 @@
               <td>The id of the name input is "input" and the id of the email input is "input". The ids should match the names, which are name and email respectively. Because the names do not match the visible labels, assistive technologies such as screen readers may not associate the visible label with the correct corresponding field.</td>
               <td>2</td>
               <td>Change id of name to "name" and email to "email"</td>
-              <td>Manual</td>
               <td>/contact.html</td>
-              <td>5/9/2025</td>
             </tr>
             <tr>
               <td>Minor</td>
@@ -235,9 +215,7 @@
               <td>For input fields, this WCAG rule requires that content is implemented using the correct supporting technologies. WCAG uses a fixed list of labels (called “tokens”) including email to use autocomplete on and this list includes email.</td>
               <td>2</td>
               <td>Add autocomplete="name" and autocomplete="email" to the form fields</td>
-              <td>Manual</td>
               <td>/contact.html</td>
-              <td>5/10/2025</td>
             </tr>
             <tr>
               <td>Serious</td>
@@ -248,9 +226,7 @@
               <td>A technique referenced in WCAG 1.3.1 says that programmatic indication of a form field as mandatory for success of the form.</td>
               <td>2</td>
               <td>Indicate the field is required using an asterik which is associated with required fields. Indicate the field is required on submission if empty by surrounding the field with a red border around the field via CSS using ::after. Use required or aria-required in the attributes.</td>
-              <td>Manual</td>
               <td>/contact.html</td>
-              <td>5/10/2025</td>
             </tr>
             <tr>
               <td>Serious</td>
@@ -261,9 +237,7 @@
               <td>The label element's for attribute must match the id attribute of the input element. Also each input field must have an attribute.</td>
               <td>3</td>
               <td>Because the labels on the contact page do not have a "for" attribute, they appear to screen readers as orphaned labels and not associated to the appopriate fields. The textarea also needs a label with a correct attribute.</td>
-              <td>Manual</td>
               <td>/contact.html</td>
-              <td>5/11/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -274,9 +248,7 @@
               <td>If an input error can be detected and suggestions for correction are known, then the suggestions should be provided to the user and the error should be provided to the user in text.</td>
               <td>1</td>
               <td>Create error messages in javascript. When the user enters an invalid email in the email field or an empty field for name, it should trigger the correct error message for the field. That error message should also receive keyboard focus and should disappear on entry of a valid value. This also requires that the name is changed to a required field. It is also best practice to include an error notification in the page title since a screen reader user is likely to believe the page was submitted correctly.</td>
-              <td>Manual</td>
               <td>/contact.html</td>
-              <td>5/11/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -287,9 +259,7 @@
               <td>Status messages should be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without using focus. The user should know the success or result of an action including the waiting state of an application.</td>
               <td>1</td>
               <td>A feedback message should display on the screen confirming the submission of the form is successful when submitted with no errors. This can be done by adding role="status" to an area near the form.</td>
-              <td>Manual</td>
               <td>/contact.html</td>
-              <td>5/11/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -300,9 +270,7 @@
               <td>There should be more than one way to locate a Web page within a set of Web pages. Currently, there is only one way to navigate to the contact page from the index page</td>
               <td>1</td>
               <td>There should be at least two ways of reaching the same content. One way would be to reproduce the menu of nav items in a site map in the footer.</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html</td>
-              <td>5/11/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -313,9 +281,7 @@
               <td>Headings and labels must correctly describe their topic or purpose. The submit button for the form says "Click". This is a generic verb that doesn't tell the user or screen reader what will happen and doesn't convey purpose. The national parks link on the home page use h3 for most headings but use h2 for another heading at the same level. The headings must be consistent.</td>
               <td>2</td>
               <td>Change "Click" for submitting the form to "Submit". "Click Here" in the home page should be replaced with a more descriptive verb.</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html, /contact.html</td>
-              <td>5/11/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -326,9 +292,7 @@
               <td>Headings and labels must correctly describe their topic or purpose. The national parks link on the home page use h3 for most headings but use h2 for another heading at the same level. The headings must be consistent.</td>
               <td>1</td>
               <td>Change the h2 heading to h3 for Arches National Park. The heading should not be underlined.</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html, /contact.html</td>
-              <td>5/11/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -339,9 +303,7 @@
               <td>Components with the same functionality in a web site that appear repeatedly are identified consistently. A strategy that people who use screen readers use when operating a website is to rely on familiarity with functions with similar labels or accessible names. Confusing and mismatched labels will increase the cognitive load for people with cognitive limitations.</td>
               <td>2</td>
               <td>Change the contact 'button' to a link as is consistent with the other nav items. Although the image alignment does not directly violate the WCAG guidelines, it is at least best practice for these similar images that are postioned next to each other to have similar alignments.</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html, /contact.html</td>
-              <td>5/12/2025</td>
             </tr>
             <tr>
               <td>Minor</td>
@@ -352,9 +314,7 @@
               <td>Custom targets should be at least 44x44 pixels. Smaller targets will be too difficult for users with hand tremors, limited dexterity, or other reasons such as using public transportation which may shake. If the target is too small, it may be difficult to aim at the target. Users who have to use their fingers instead of a mouse or stylus lack the same level of fine control they would get from these devices.</td>
               <td>1</td>
               <td>Change the social media icons from 20x20 to at least 44x44 with an increased gap between the icons.</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html, /contact.html</td>
-              <td>5/12/2025</td>
             </tr>
             <tr>
               <td>Moderate</td>
@@ -365,7 +325,6 @@
               <td>Content must reflow so it can be presented without loss of information or functionality and without requiring scrolling in two dimensions</td>
               <td>4</td>
               <td>Fix hero h1 which is set to 80px font, the social imgs which are set at 20 x 20, footer text is set to 10px, and the nav a which has no wrap. The textarea message box in contact also can be expanded horizontally to overflow the screen.</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html, /contact.html</td>
             </tr>
             <tr>
@@ -377,11 +336,10 @@
               <td>Information, structure, and relationships conveyed through presentation can be programatically determined or are available in text</td>
               <td>2</td>
               <td>Add landmarks such as &lt;main&gt; and &lt;footer&gt; (instead of class being footer on a div), which can help screen readers navigate the page.</td>
-              <td>Manual</td>
               <td>/intentionally-bad-site.html, /contact.html</td>
             </tr>
           </tbody>
-        </table> -->
+        </table>
         </div>
       </div>
       <h3>My example report to stakeholders </h3>
@@ -396,7 +354,7 @@
         allowfullscreen
       >
       </iframe
-      >=
+      >
     </main>
     <hr />
     <footer classname="footer-container">
