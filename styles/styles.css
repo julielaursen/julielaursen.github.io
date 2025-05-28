@@ -126,7 +126,6 @@ p {
   align-items: flex-start;
   justify-content: flex-start;
   min-width: 0;
-  max-width: 180px;
   min-height: 280px;
   background: #fff;
   border-radius: 12px;
