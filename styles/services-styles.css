@@ -289,15 +289,15 @@ iframe {
 }
 
 .accessibility-findings-table {
-  width: 100%;
   border-collapse: collapse;
-  margin: 2rem 0;
+  margin: 2rem 4rem;
   font-size: 14px;
   background: #fff;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13);
   border-radius: 10px;
   overflow: hidden;
   box-sizing: border-box;
+  table-layout: auto;
 }
 
 .accessibility-findings-table th,
@@ -309,7 +309,7 @@ iframe {
 }
 
 .accessibility-findings-table th {
-  background: #d3e2f1; /* Slightly darker blue for header */
+  background: lightgrey; /* Slightly darker blue for header */
   font-weight: bold;
 }
 
@@ -328,11 +328,11 @@ iframe {
 @media (max-width: 600px) {
   .accessibility-findings-table {
     font-size: 0.85rem;
-    min-width: 700px;
   }
   .accessibility-findings-table th,
   .accessibility-findings-table td {
     padding: 0.3rem 0.15rem;
+    word-break: break-all;
   }
 }
 
