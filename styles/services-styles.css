@@ -322,21 +322,25 @@ iframe {
 /* Accessibility Portfolio */
 
 .table-responsive {
-  margin: 0 auto;
+  width: 100%;
+  max-width: 900px; /* Or your preferred content width */
+  margin: 20px auto; /* Center the container */
   padding: 0 1rem;
-  overflow-x: auto;
+  overflow-x: auto; /* Enable horizontal scroll if needed */
+  box-sizing: border-box;
+  display: block;
 }
 
 .accessibility-findings-table {
+  width: 100%;
+  min-width: 700px; /* Allow horizontal scroll on small screens */
+  margin: 1.5rem 0;
   border-collapse: collapse;
-  margin: 2rem 4rem;
-  font-size: 14px;
   background: #fff;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
   border-radius: 10px;
-  overflow: hidden;
-  box-sizing: border-box;
   table-layout: auto;
+  box-sizing: border-box;
 }
 
 .accessibility-findings-table th,
@@ -371,7 +375,6 @@ iframe {
   .accessibility-findings-table th,
   .accessibility-findings-table td {
     padding: 0.3rem 0.15rem;
-    word-break: break-all;
   }
 }
 
