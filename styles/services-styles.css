@@ -24,6 +24,33 @@
   line-height: 0.3;
   font-weight: bold;
 }
+
+/* Responsive header styles */
+@media (max-width: 768px) {
+  .site-header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .header-text {
+    display: none; /* Hide the header-text paragraphs on smaller screens */
+  }
+
+  .site-header nav {
+    margin: 10px 0; /* Add spacing around the navigation */
+  }
+
+  .logo {
+    width: 50px; /* Reduce the logo size for smaller screens */
+    height: auto;
+  }
+
+  .menu-btn {
+    font-size: 20px; /* Adjust the menu button size */
+    padding: 8px 16px; /* Adjust padding for better fit */
+  }
+}
+
 h1 {
   font-family: Poppins, sans-serif;
   font-size: 90px;
@@ -34,6 +61,18 @@ h1 {
   text-align: center;
   animation: slideIn 1s ease-in-out;
 }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+    margin: 20px 10px 20px 10px; /* Reduce side margins */
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+}
+
 h2 {
   font-family: Poppins, sans-serif;
   font-size: 40px;
