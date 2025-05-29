@@ -291,6 +291,19 @@ h2 {
   text-decoration: underline;
 }
 
+@media (max-width: 600px) {
+  h1 {
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 @media (max-width: 900px) {
   .social-calendar-table th,
   .social-calendar-table td {
