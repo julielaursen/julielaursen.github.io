@@ -264,6 +264,11 @@ p {
   text-align: center;
 }
 
+.copy {
+  text-align: center;
+  word-spacing: 0.15em;
+}
+
 .footer-contact-me {
   display: flex;
   flex-direction: column;
