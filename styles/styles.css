@@ -702,29 +702,9 @@ p {
   }
 }
 
-/* @media (max-width: 700px) {
-  .tabs {
-    display: flex;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    gap: 0.5rem;
-    -webkit-overflow-scrolling: touch;
-  }
-  .tab {
-    min-width: max-content;
-    font-size: 0.95rem;
-    padding: 0.5rem 1rem;
-    flex: 0 0 auto;
-    white-space: nowrap;
-  }
-  .experience-tab-content {
-    padding: 0.5rem;
-  }
-} */
-
 /* Resume Container */
 .experience-tab-content {
-  padding: 30px 40px 40px 40px;
+  padding: 20px 8px 24px 8px; /* Less horizontal padding on mobile */
   background: linear-gradient(45deg, #f5f5f5, white);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -739,8 +719,12 @@ p {
 
 .resume-experience {
   line-height: 1;
-  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  white-space: normal;
+  word-break: normal;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 .job-title {
@@ -790,6 +774,25 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .job-title {
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-experience {
+    font-size: 12px;
+    margin: 16px 4px; /* Less margin on mobile */
+    padding: 16px 4px 20px 4px;
+  }
+
+  @media (max-width: 600px) {
+  .education-body {
+    line-height: normal;
+  }
 }
 
 /* Credly Link */
