@@ -795,6 +795,13 @@ p {
 }
 
 @media (max-width: 700px) {
+  .experience-tab-content {
+    padding: 0;
+    margin: 10px 10px; /* Less margin on mobile */
+  }
+}
+
+@media (max-width: 700px) {
   .job-title {
     margin-left: 4px;
   }
