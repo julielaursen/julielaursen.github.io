@@ -368,6 +368,12 @@ p {
   margin-right: 45px;
 }
 
+@media (max-width: 700px) {
+  .overlay-content a {
+    font-size: 40px;
+  }
+}
+
 .overlay-content a:hover,
 .overlay-content a:focus {
   color: #f1f1f1;
