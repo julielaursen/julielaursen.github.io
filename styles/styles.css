@@ -660,6 +660,68 @@ p {
   display: block;
 }
 
+@media (max-width: 700px) {
+  .tabs {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    cursor: grab;
+    background: #f8f8f8;
+  }
+  .tabs::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to left, #f8f8f8 80%, rgba(248, 248, 248, 0));
+    z-index: 2;
+  }
+  .tabs::before {
+    content: "⇄";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #bbb;
+    font-size: 1.3em;
+    pointer-events: none;
+    z-index: 3;
+  }
+  .tab {
+    min-width: max-content;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
+
+/* @media (max-width: 700px) {
+  .tabs {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab {
+    min-width: max-content;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+  .experience-tab-content {
+    padding: 0.5rem;
+  }
+} */
+
 /* Resume Container */
 .experience-tab-content {
   padding: 30px 40px 40px 40px;
