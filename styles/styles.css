@@ -431,9 +431,9 @@ p {
 
 .word-carousel {
   position: relative;
-  height: 50px; /* Adjust as needed */
+  height: 50px; 
   overflow: hidden;
-  font-family: Poppins, serif; /* Example font */
+  font-family: Poppins, serif; 
 }
 
 .word {
@@ -441,10 +441,28 @@ p {
   top: -50px; /* Start above the container */
   width: 100%;
   text-align: center;
-  font-size: 32px; /* Adjust as needed */
+  font-size: 32px; 
   opacity: 0;
   transition: top 2s ease;
-  /* , opacity 1s ease; */
+}
+
+@media (max-width: 600px) {
+  .word-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .word {
+    margin: 0 8px;
+    width: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
 }
 
 .word.active {
