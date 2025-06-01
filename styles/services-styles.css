@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -319,7 +324,7 @@ iframe {
   background-repeat: no-repeat;
 }
 
-/* Accessibility Portfolio */
+/* tables*/
 
 .table-outer {
   padding: 0 4rem;
@@ -329,7 +334,6 @@ iframe {
 .table-responsive {
   width: 100%;
   margin: 20px auto; /* Center the container */
-  /* padding: 0 4rem; */
   overflow-x: auto; /* Enable horizontal scroll if needed */
   box-sizing: border-box;
   display: block;
@@ -347,8 +351,27 @@ iframe {
   box-sizing: border-box;
 }
 
+.usability-findings-table {
+  width: 100%;
+  min-width: 1200px;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
 .accessibility-findings-table th,
 .accessibility-findings-table td {
+  border: 1px solid #e0e0e0;
+  padding: 0.6rem 0.4rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.usability-findings-table th,
+.usability-findings-table td {
   border: 1px solid #e0e0e0;
   padding: 0.6rem 0.4rem;
   text-align: left;
@@ -360,18 +383,26 @@ iframe {
   font-weight: bold;
 }
 
+.usability-findings-table th {
+  background: #f2f2f2;
+  font-weight: bold;
+}
+
 .accessibility-findings-table tr:nth-child(even) {
   background: #f7fafd;
 }
 
 @media (max-width: 700px) {
   .table-responsive {
-    /* No horizontal padding here either! */
     max-width: 100vw;
   }
   .accessibility-findings-table {
     min-width: 520px;
     font-size: 0.9rem;
+  }
+  .usability-findings-table {
+    min-width: 480px;
+    font-size: 0.92rem;
   }
 }
 
