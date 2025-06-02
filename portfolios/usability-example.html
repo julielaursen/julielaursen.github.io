@@ -45,208 +45,201 @@
     </header>
     <hr />
     <main>
-      <section class="usability-image-container" style="height: 1200px">
+      <section class="usability-image-container" style="height: 100px">
         <h2>My Bug Bashing Process</h2>
-        <h3>
-          Heuristic Evaluation: A Case Study From Austin Community College
-        </h3>
-        <p class="introduction">
-          <!-- A long time ago, I found myself in a new role as a tester, a career
-          path I hadn't considered or trained for. I approached this situation
-          very similar to other situations in my life where I needed to learn
-          something new. For example, when learning physical modalities like
-          dance or competitive bodybuilding, I take workshops or read blogs from
-          those that are considered the "top" of their field. Similarly, I
-          sought out thought leaders in the field such as James Bach and Michael
-          Bolton. I also enrolled myself in certifications such as BBST (Black
-          Box Software Testing). One approach that was continously mentioned was
-          the heuristic evaluation process. When I re-enrolled Austin Community
-          college, I was also introduced to this same principle. This time it
-          was called "Jakob Nielsen's 10 general principles for interaction
-          design". -->
-
-          <!-- <a
-            href="https://www.developsense.com/articles/2005-01-TestingWithoutAMap.pdf"
-            >Testing Without a Map</a
-          > -->
-        </p>
-
-        <div class="table-outer">
-          <div class="table-responsive">
-            <table class="usability-findings-table">
-              <thead>
-                <tr>
-                  <th>Heuristic</th>
-                  <th>Priority</th>
-                  <th>Severity</th>
-                  <th>Issues</th>
-                  <th>Recommendation</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Visibility of System Status</td>
-                  <td>6</td>
-                  <td>2</td>
-                  <td>
-                    Key content appears below the fold due to excessive header
-                    space.
-                  </td>
-                  <td>
-                    Streamline the header and subheader into a single header at
-                    100% width. Remove the external link to google search and
-                    the "I am..." dropdown. Relocate the language selection to
-                    the main header. Remove the header "ACC Admissions: Apply to
-                    ACC" as its redundant.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Match between system and real world</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>
-                    Breadcrumb navigation leads to unexpected destinations. The
-                    "Apply now" button reloads the current page.
-                  </td>
-                  <td>
-                    Update breadcrumb links to match user expectations—for
-                    example, ensure "Home" links to the ACC main homepage. Make
-                    the "Apply now" button link directly to the application
-                    form.
-                  </td>
-                </tr>
-                <tr>
-                  <td>User control and freedom</td>
-                  <td>3</td>
-                  <td>3</td>
-                  <td>
-                    No visible back navigation; users rely on browser controls.
-                  </td>
-                  <td>
-                    Add clear and functional breadcrumb navigation that
-                    correctly routes to previous sections within the admissions
-                    site.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Consistency and standards</td>
-                  <td>8</td>
-                  <td>2</td>
-                  <td>
-                    1. Inconsistent terminology around area of study OR
-                    programs.<br />
-                    2. Admissions-enrollment-forms page has a table heading for
-                    'go to form' but 'Admissions Application' routes to a
-                    website instead of a form.<br />
-                    3. Adult Education is listed but not differentiated from
-                    regular or continuing education coursework.
-                  </td>
-                  <td>
-                    1. Standardize the use of either "area of study" or
-                    "programs".<br />
-                    2. Rename misleading links, e.g. 'Admissions Application' to
-                    'Admissions webpage'.<br />
-                    3. Conduct usability testing to refine terminology for Adult
-                    Education.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Error prevention</td>
-                  <td>5</td>
-                  <td>2</td>
-                  <td>
-                    Users are instructed to change browser settings to avoid
-                    losing application data.
-                  </td>
-                  <td>
-                    Apply Progressive Web App techniques or use local storage to
-                    manage state and prevent data loss, minimizing reliance on
-                    user browser configurations.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Recognition rather than recall</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>
-                    Confusing navigation flow between admissions, registration,
-                    and logout experiences. Users must remember how to navigate
-                    back to previous steps in multi-step processes, increasing
-                    cognitive load.
-                  </td>
-                  <td>
-                    Improve hover/click interaction states. Embed the magnifying
-                    glass icon inside the search field for better affordance.
-                    Add clear navigation back to registration portals after
-                    logout.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Flexibility and efficiency of use</td>
-                  <td>7</td>
-                  <td>2</td>
-                  <td>
-                    The website does not easily cater to both novice and
-                    experienced users; information on program and certificate
-                    paths is difficult to find.
-                  </td>
-                  <td>
-                    Promote direct access to Program Maps and Awards and other
-                    shortcuts from the homepage to support frequent user goals.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Aesthetic and minimalist design</td>
-                  <td>10</td>
-                  <td>1</td>
-                  <td>
-                    Redundant links and off-topic content clutter the interface.
-                  </td>
-                  <td>
-                    Adopt a minimalist design approach by decluttering pages,
-                    using whitespace effectively, and highlighting key
-                    information to improve readability. Eliminate unnecessary
-                    bullets and consolidate repeated content. Remove promotional
-                    content unrelated to admissions, such as the “Meet the
-                    Graduates” video and credit transfer link.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Help users recognize, diagnose and recover from errors
-                  </td>
-                  <td>9</td>
-                  <td>2</td>
-                  <td>Broken or misleading links and search UI issues.</td>
-                  <td>
-                    Correct the “Syllabus & Curriculum Vitae” link and
-                    reposition the search icon inside the search bar. Ensure
-                    search interactions are functional.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Help and documentation</td>
-                  <td>1</td>
-                  <td>3</td>
-                  <td>
-                    Overlapping navigation elements create confusion, making it
-                    difficult for users to quickly access information when
-                    needed.
-                  </td>
-                  <td>
-                    Consolidate navigation into a single, accessible top-level
-                    menu. Replace accordion-style dropdowns with
-                    keyboard-navigable flyout menus to reduce cognitive load and
-                    improve accessibility. Create a centralized help center with
-                    searchable FAQs and tutorials and then migrate information
-                    from the admissions home page into the new help center.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
       </section>
+
+      <h3>Heuristic Evaluation: A Case Study From Austin Community College</h3>
+      <p class="introduction">
+        One concept that consistently comes up in the study of both the fields
+        of quality assurance and visual communication is heuristic evaluation.
+        When I enrolled at Austin Community College to study design principles,
+        I encountered this familiar idea repatterned as
+        <strong
+          >Jakob Nielsen’s 10 Usability Heuristics for User Interface
+          Design</strong
+        >.
+        <br />
+        Heuristics are guiding principles that support quick, efficient
+        decision-making. They offer a structured framework for assessing the
+        usability and functionality of complex systems. With over a decade of
+        experience in manual software testing, I’ve developed an intuitive sense
+        for applying these principles in practice. As part of my introductory
+        UX/UI coursework, I evaluated the Austin Community College admissions
+        website—https://www.austincc.edu/admissions. The review was conducted
+        using Chrome on macOS on December 1, 2024.
+        <br />The website in question is https://www.austincc.edu/admissions.
+      </p>
+
+      <div class="table-outer">
+        <div class="table-responsive">
+          <table class="usability-findings-table">
+            <thead>
+              <tr>
+                <th>Heuristic</th>
+                <th>Priority</th>
+                <th>Severity</th>
+                <th>Issues</th>
+                <th>Recommendation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Visibility of System Status</td>
+                <td>6</td>
+                <td>2</td>
+                <td>
+                  Key content appears below the fold due to excessive header
+                  space.
+                </td>
+                <td>
+                  Streamline the header and subheader into a single header at
+                  100% width. Remove the external link to google search and the
+                  "I am..." dropdown. Relocate the language selection to the
+                  main header. Remove the header "ACC Admissions: Apply to ACC"
+                  as its redundant.
+                </td>
+              </tr>
+              <tr>
+                <td>Match between system and real world</td>
+                <td>4</td>
+                <td>3</td>
+                <td>
+                  Breadcrumb navigation leads to unexpected destinations. The
+                  "Apply now" button reloads the current page.
+                </td>
+                <td>
+                  Update breadcrumb links to match user expectations—for
+                  example, ensure "Home" links to the ACC main homepage. Make
+                  the "Apply now" button link directly to the application form.
+                </td>
+              </tr>
+              <tr>
+                <td>User control and freedom</td>
+                <td>3</td>
+                <td>3</td>
+                <td>
+                  No visible back navigation; users rely on browser controls.
+                </td>
+                <td>
+                  Add clear and functional breadcrumb navigation that correctly
+                  routes to previous sections within the admissions site.
+                </td>
+              </tr>
+              <tr>
+                <td>Consistency and standards</td>
+                <td>8</td>
+                <td>2</td>
+                <td>
+                  1. Inconsistent terminology around area of study OR
+                  programs.<br />
+                  2. Admissions-enrollment-forms page has a table heading for
+                  'go to form' but 'Admissions Application' routes to a website
+                  instead of a form.<br />
+                  3. Adult Education is listed but not differentiated from
+                  regular or continuing education coursework.
+                </td>
+                <td>
+                  1. Standardize the use of either "area of study" or
+                  "programs".<br />
+                  2. Rename misleading links, e.g. 'Admissions Application' to
+                  'Admissions webpage'.<br />
+                  3. Conduct usability testing to refine terminology for Adult
+                  Education.
+                </td>
+              </tr>
+              <tr>
+                <td>Error prevention</td>
+                <td>5</td>
+                <td>2</td>
+                <td>
+                  Users are instructed to change browser settings to avoid
+                  losing application data.
+                </td>
+                <td>
+                  Apply Progressive Web App techniques or use local storage to
+                  manage state and prevent data loss, minimizing reliance on
+                  user browser configurations.
+                </td>
+              </tr>
+              <tr>
+                <td>Recognition rather than recall</td>
+                <td>2</td>
+                <td>3</td>
+                <td>
+                  Confusing navigation flow between admissions, registration,
+                  and logout experiences. Users must remember how to navigate
+                  back to previous steps in multi-step processes, increasing
+                  cognitive load.
+                </td>
+                <td>
+                  Improve hover/click interaction states. Embed the magnifying
+                  glass icon inside the search field for better affordance. Add
+                  clear navigation back to registration portals after logout.
+                </td>
+              </tr>
+              <tr>
+                <td>Flexibility and efficiency of use</td>
+                <td>7</td>
+                <td>2</td>
+                <td>
+                  The website does not easily cater to both novice and
+                  experienced users; information on program and certificate
+                  paths is difficult to find.
+                </td>
+                <td>
+                  Promote direct access to Program Maps and Awards and other
+                  shortcuts from the homepage to support frequent user goals.
+                </td>
+              </tr>
+              <tr>
+                <td>Aesthetic and minimalist design</td>
+                <td>10</td>
+                <td>1</td>
+                <td>
+                  Redundant links and off-topic content clutter the interface.
+                </td>
+                <td>
+                  Adopt a minimalist design approach by decluttering pages,
+                  using whitespace effectively, and highlighting key information
+                  to improve readability. Eliminate unnecessary bullets and
+                  consolidate repeated content. Remove promotional content
+                  unrelated to admissions, such as the “Meet the Graduates”
+                  video and credit transfer link.
+                </td>
+              </tr>
+              <tr>
+                <td>Help users recognize, diagnose and recover from errors</td>
+                <td>9</td>
+                <td>2</td>
+                <td>Broken or misleading links and search UI issues.</td>
+                <td>
+                  Correct the “Syllabus & Curriculum Vitae” link and reposition
+                  the search icon inside the search bar. Ensure search
+                  interactions are functional.
+                </td>
+              </tr>
+              <tr>
+                <td>Help and documentation</td>
+                <td>1</td>
+                <td>3</td>
+                <td>
+                  Overlapping navigation elements create confusion, making it
+                  difficult for users to quickly access information when needed.
+                </td>
+                <td>
+                  Consolidate navigation into a single, accessible top-level
+                  menu. Replace accordion-style dropdowns with
+                  keyboard-navigable flyout menus to reduce cognitive load and
+                  improve accessibility. Create a centralized help center with
+                  searchable FAQs and tutorials and then migrate information
+                  from the admissions home page into the new help center.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </main>
     <hr />
     <footer classname="footer-container">
