@@ -14,6 +14,12 @@ h2 {
   margin-top: 4rem;
 }
 
+.social-media-audit-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
 .row-marketing {
   display: flex;
   justify-content: center;
@@ -69,6 +75,53 @@ h2 {
 
 .card-marketing:hover .card__heading {
   color: #0175b2;
+}
+
+.thumbnail {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 60px auto;
+}
+.thumbnail:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail-wrapper {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.thumbnail-link {
+  display: block;
+  position: relative;
+}
+
+.download-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0.92;
+  transition: background 0.2s;
+  z-index: 2;
+}
+
+.download-button:hover {
+  background: #444;
 }
 
 .ux-header {
