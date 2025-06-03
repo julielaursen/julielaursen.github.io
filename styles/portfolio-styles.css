@@ -357,7 +357,7 @@ h2 {
   h1 {
     word-break: normal;
     overflow-wrap: break-word !important;
-    hyphens: auto;
+    hyphens: none !important;
     text-align: center;
     font-size: 3rem;
     margin: 20px 10px;
