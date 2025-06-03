@@ -576,6 +576,9 @@ iframe {
   .sitemap ul li {
     flex: 1 1 100%; /* Each item takes up the full width on smaller screens */
   }
+  .footer-content {
+    padding: 0;
+  }
 }
 
 @media (max-width: 600px) {

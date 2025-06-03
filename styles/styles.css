@@ -200,7 +200,7 @@ p {
   max-width: 1200px;
   padding: 40px;
   margin: 0 auto;
-  width: 85%;
+  width: 75%;
 }
 
 .footer-section {
@@ -340,6 +340,9 @@ p {
 @media (max-width: 600px) {
   .sitemap ul li {
     flex: 1 1 100%; /* Each item takes up the full width on smaller screens */
+  }
+  .footer-content {
+    padding: 0;
   }
 }
 /* Curtain Menu */
