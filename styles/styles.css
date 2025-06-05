@@ -227,12 +227,6 @@ p {
   gap: 15px;
 }
 
-.social-media-icons img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-
 .social-media-icons img:hover {
   transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
