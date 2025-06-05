@@ -215,6 +215,12 @@ p {
   margin-bottom: 10px;
 }
 
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
 .social-media-icons img:hover {
   transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
@@ -959,12 +965,6 @@ p {
 
 #back-to-top:active {
   transform: scale(0.95); /* Slightly shrink the button when clicked */
-}
-
-.social-media-icons {
-  display: flex;
-  align-items: center;
-  gap: 25px;
 }
 
 .github-logo:hover {
