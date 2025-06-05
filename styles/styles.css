@@ -1027,9 +1027,8 @@ p {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 20px 10px 20px 10px;
-    width: 100%;
     box-sizing: border-box;
     text-align: center;
     overflow-wrap: break-word;
