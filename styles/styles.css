@@ -203,10 +203,12 @@ p {
 }
 
 .footer-section {
-  flex: 1 1 25%; /* Each section takes up 30% of the width */
+  flex: 1 1 33%; /* Each section takes up 30% of the width */
   min-width: 200px;
   display: flex;
+  align-items: center;
   flex-direction: column;
+  border: 1px dashed red;
 }
 
 .footer-section h4 {
@@ -218,6 +220,7 @@ p {
 .social-media-icons {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 25px;
 }
 
