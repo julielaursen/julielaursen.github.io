@@ -215,17 +215,6 @@ p {
   margin-bottom: 10px;
 }
 
-.social-media-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.social-media-icons {
-  display: flex;
-  gap: 15px;
-}
-
 .social-media-icons img:hover {
   transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
@@ -913,11 +902,6 @@ p {
   font-weight: bold;
 }
 
-.social-media-container {
-  display: flex;
-  padding: 20px;
-}
-
 #contact-form input,
 #contact-form textarea {
   font-family: Poppins, sans-serif;
@@ -993,10 +977,6 @@ p {
 
 .linkedin-logo:hover {
   transform: translateY(-5px); /* Raise the button when clicked */
-}
-
-.social-media-icons .dev-to-logo {
-  margin-left: -25px;
 }
 
 /* Responsive Header Styling */
