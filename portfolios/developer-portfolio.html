@@ -30,13 +30,9 @@
             >&times;</a
           >
           <div class="overlay-content">
-            <a href="marketing-portfolio.html"
-              >Marketing Portfolio</a
-            >
+            <a href="marketing-portfolio.html">Marketing Portfolio</a>
             <a href="uiux-portfolio.html">UI/UX Portfolio</a>
-            <a href="developer-portfolio.html"
-              >Developer Portfolio</a
-            >
+            <a href="developer-portfolio.html">Developer Portfolio</a>
             <a href="../services.html">Services</a>
             <a href="../resume.html">Resume</a>
           </div>
@@ -48,12 +44,8 @@
     <h1>Developer Portfolio</h1>
     <main>
       <h2 id="github-status">Github Status</h2>
-      <!-- <h3>
-        &nbsp; &nbsp; &nbsp;View my github portfolio
-        <a href="https://github.com/julielaursen">here</a>
-      </h3> -->
+
       <script>
-        // Get today's date
         const today = new Date()
         const formattedDate = today.toLocaleDateString("en-US", {
           year: "numeric",
@@ -61,35 +53,37 @@
           day: "numeric",
         })
 
-        // Update the h2 element with the date
         const githubStatusHeading = document.getElementById("github-status")
         githubStatusHeading.textContent = `Github Status as of ${formattedDate}`
       </script>
-      <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
+      <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
       <link
         rel="stylesheet"
         href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
       />
 
-      <!-- Prepare a container for your calendar. -->
-       <a href="https://github.com/julielaursen" target="_blank" aria-label="View my GitHub profile">
+      <a
+        href="https://github.com/julielaursen"
+        target="_blank"
+        aria-label="View my GitHub profile"
+      >
+        <div class="calendar">
+          <img
+            src="../images/Spinner-2.gif"
+            alt="Loading spinner"
+            style="width: 50px; height: 50px"
+          />
+          <script>
+            GitHubCalendar(".calendar", "julielaursen", {
+              responsive: true,
+              global_stats: false,
+              tooltips: true,
+            })
+          </script>
+        </div>
+      </a>
 
-      <div class="calendar">
-      <img
-    src="../images/Spinner-2.gif"
-    alt="Loading spinner"
-    style="width: 50px; height: 50px;"
-  />
-        <script>
-          GitHubCalendar(".calendar", "julielaursen", {
-            responsive: true,
-            global_stats: false, // To-Do: I'd like this to show but its giving incorrect data
-            tooltips: true,
-          })
-        </script>
-      </div>
-</a>
       <div class="github-container">
         <div class="github-stats">
           <img
@@ -104,51 +98,46 @@
           />
         </div>
         <div class="github-streak">
-          <a href="https://git.io/streak-stats"
-            ><img
+          <a href="https://git.io/streak-stats">
+            <img
               src="https://streak-stats.demolab.com?user=julielaursen"
               alt="GitHub Streak"
-          /></a>
+            />
+          </a>
         </div>
-        <!-- <img
-          src="https://github-readme-stats.vercel.app/api/wakatime?username=2e55c20d-e21c-4456-8e24-6353fb8b2ae3"
-          alt="most used languages"
-        /> -->
-        <!-- [![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)](https://github.com/anuraghazra/github-readme-stats) -->
       </div>
-      <!-- <div class="github-trophies">
-        <img
-          src="https://github-profile-trophy.vercel.app/?username=julielaursen"
-          alt="julielaursen"
-        />
-      </div> -->
+
       <section class="gitub-repos">
-        <h2>My Github Repositories for Automation Tests</h3>
-        <h3 class="dev-portfolio-header">The following repositories are directly related to this portfolio</h4>
+        <h2>My Github Repositories for Automation Tests</h2>
+        <h3 class="dev-portfolio-header">
+          The following repositories are directly related to this portfolio
+        </h3>
+
         <div class="github-repo-container">
           <section class="grid-container">
             <div class="grid-item">
               <a
-              href="https://github.com/julielaursen/portfolio-cypress-tests"
-              target="_blank"
-              aria-label="View the Cypress Portfolio Tests repository on GitHub"
-            >
-              <div class="grid-item-header">
-                <h3>Cypress Portfolio Tests</h3>
-              </div>
-              <div class="grid-item-body">
-                <p>
-                  This portfolio website has been comprehensively tested with
-                  Cypress to validate its functionality. As an software
-                  developer in test, I have used Cypress extensively at work
-                  including debugging and troubleshooting Cypress with Github
-                  and integrating it with CI/CD pipelines.
-                </p>
-              </div>
+                href="https://github.com/julielaursen/portfolio-cypress-tests"
+                target="_blank"
+                aria-label="View the Cypress Portfolio Tests repository on GitHub"
+              >
+                <div class="grid-item-header">
+                  <h3>Cypress Portfolio Tests</h3>
+                </div>
+                <div class="grid-item-body">
+                  <p>
+                    This portfolio website has been comprehensively tested with
+                    Cypress to validate its functionality. As a software
+                    developer in test, I have used Cypress extensively at work
+                    including debugging and troubleshooting Cypress with Github
+                    and integrating it with CI/CD pipelines.
+                  </p>
+                </div>
               </a>
             </div>
-              <div class="grid-item">
-                <a
+
+            <div class="grid-item">
+              <a
                 href="https://github.com/julielaursen/portfolio-playwright-tests"
                 target="_blank"
                 aria-label="View the Playwright Portfolio Tests repository on GitHub"
@@ -163,14 +152,15 @@
                     accuracy.
                   </p>
                 </div>
-              </div>
-            </a>
-
+              </a>
+            </div>
           </section>
-           <h3> &nbsp; &nbsp; &nbsp;My Data Analyst Portfolios:</h4>
-          <section class="grid-container">
-           <div class="grid-item">
-                <a
+
+          <h3>&nbsp; &nbsp; &nbsp;My Data Analyst Portfolios:</h3>
+
+          <div class="grid-container">
+            <div class="grid-item">
+              <a
                 href="https://github.com/julielaursen/Google-Data-Analytics-Bellabeat-Case-Study"
                 target="_blank"
                 aria-label="View my Data Analyst portfolio on GitHub"
@@ -180,77 +170,60 @@
                 </div>
                 <div class="grid-item-body">
                   <p>
-                    This is my portfolio related to the Google Data Analytics Professional Certificate, a 9 course series related to 
-                    cleaning, processing, analyzing and visualizing data using SQL, R, and Tableau.
-
+                    This is my portfolio related to the Google Data Analytics
+                    Professional Certificate, a 9-course series related to
+                    cleaning, processing, analyzing, and visualizing data using
+                    SQL, R, and Tableau.
                   </p>
                 </div>
+              </a>
+            </div>
           </div>
-        </section>
         </div>
       </section>
     </main>
+
     <hr />
- <footer class="footer-container">
+    <footer class="footer-container">
       <div class="footer-content">
         <div class="social-media-container">
           <div class="social-media-icons">
-            <a href="https://github.com/julielaursen"
-              ><div class="github-logo">
-                <img
-                  src="../images/Github_black.png"
-                  alt="GitHub Logo"
-                  style="width: 50px; height: auto"
-                />
-              </div>
+            <a href="https://github.com/julielaursen">
+              <img
+                src="../images/Github_black.png"
+                alt="GitHub Logo"
+                style="width: 50px; height: auto"
+              />
             </a>
             <a
               href="https://www.notion.so/Hi-I-m-Julie-Coleman-16c962ebb36080d18eb0f5adebd21268"
             >
-              <div class="notion-logo">
-                <img
-                  src="../images/Notion_black.png"
-                  alt="Notion Logo"
-                  style="width: 50px; height: auto"
-                />
-              </div>
+              <img
+                src="../images/Notion_black.png"
+                alt="Notion Logo"
+                style="width: 50px; height: auto"
+              />
             </a>
-            <a href="https://www.linkedin.com/in/julie-coleman-79b7a83/"
-              ><div class="linkedin-logo">
-                <img
-                  src="../images/LinkedIN_black.png"
-                  alt="LinkedIn Logo"
-                  style="width: 50px; height: auto"
-                />
-              </div>
+            <a href="https://www.linkedin.com/in/julie-coleman-79b7a83/">
+              <img
+                src="../images/LinkedIN_black.png"
+                alt="LinkedIn Logo"
+                style="width: 50px; height: auto"
+              />
             </a>
-            <!-- this icon needs to be adjusted, remove background maybe-->
-            <!-- <a href="https://dev.to/julielaursen"
-          ><div class="dev-to-logo">
-            <img
-              src="devto-logo.png"
-              alt="DevTo Logo"
-              style="width: 100px; height: 100px"
-            />
-          </div>
-        </a> -->
           </div>
         </div>
         <div class="sitemap">
           <h4>Sitemap</h4>
           <ul>
             <li>
-              <a href="marketing-portfolio.html"
-                >Marketing Portfolio</a
-              >
+              <a href="marketing-portfolio.html">Marketing Portfolio</a>
             </li>
             <li>
               <a href="uiux-portfolio.html">UX/UI Portfolio</a>
             </li>
             <li>
-              <a href="developer-portfolio.html"
-                >Developer Portfolio</a
-              >
+              <a href="developer-portfolio.html">Developer Portfolio</a>
             </li>
             <li><a href="../services.html">Services</a></li>
           </ul>
