@@ -188,7 +188,6 @@ p {
   background-color: #f9f9f9;
   padding: 20px 40px;
   box-sizing: border-box;
-  border: 1px dashed red;
 }
 
 .footer-content {
@@ -199,7 +198,6 @@ p {
   max-width: 1200px;
   padding: 40px;
   margin: 0 auto;
-  border: 1px dashed red;
 }
 
 .footer-section {
@@ -207,7 +205,6 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px dashed red;
 }
 
 .footer-section h4 {
