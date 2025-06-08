@@ -67,6 +67,8 @@ body {
 
 hr {
   margin-bottom: 10px;
+  position: static;
+  z-index: 0; /* Ensure the hr is below other content so unblocking for cypress */
 }
 
 .introduction {
