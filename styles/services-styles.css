@@ -529,14 +529,50 @@ iframe {
   color: #065a63;
 }
 
-#dark-mode-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px auto;
-  background: none;
-  border: none;
-  cursor: pointer;
+/* usability section*/
+
+.fake-ticket {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-left: 6px solid #666666;
+  padding: 0rem 1.5rem;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ticket h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.meta {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.meta span {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.section {
+  margin-bottom: 0.5rem;
+}
+
+.section h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.section p {
+  margin: 0;
+}
+
+.section ul,
+.section ol {
+  padding-left: 1.25rem;
 }
 
 @media (max-width: 1024px) {

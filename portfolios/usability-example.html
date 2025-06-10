@@ -75,7 +75,10 @@
 
       <div class="table-outer">
         <div class="table-responsive">
-          <table class="usability-findings-table">
+          <table
+            class="usability-findings-table"
+            data-cy="usability-findings-table"
+          >
             <thead>
               <tr>
                 <th>Heuristic</th>
@@ -240,6 +243,76 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+
+      <div class="ticket">
+        <div class="fake-ticket">
+          <h3>APPLY-101: "Apply now" button reloads current page</h3>
+
+          <div class="meta">
+            <span><strong>Status:</strong> Open</span>
+            <span><strong>Priority:</strong> Medium</span>
+            <span><strong>Type:</strong> Bug</span>
+          </div>
+
+          <div class="section">
+            <h2>Description</h2>
+            <p>
+              The "Apply now" button on the admissions homepage reloads the
+              current page instead of opening the expected application form.
+            </p>
+          </div>
+
+          <div class="section">
+            <h2>Steps to Reproduce</h2>
+            <ol>
+              <li>
+                Navigate to
+                <a href="https://admissions.austincc.edu/" target="_blank"
+                  >https://admissions.austincc.edu/</a
+                >
+              </li>
+              <li>Click the "Apply now" button located in the hero section</li>
+              <li>
+                Observe that the page reloads rather than opening the
+                application form
+              </li>
+            </ol>
+          </div>
+
+          <div class="section">
+            <h2>Expected Behavior</h2>
+            <p>
+              The "Apply now" button should navigate the user to the application
+              form or display the form in-page.
+            </p>
+          </div>
+
+          <div class="section">
+            <h2>Actual Behavior</h2>
+            <p>
+              Clicking the button reloads the homepage without displaying any
+              form.
+            </p>
+          </div>
+
+          <div class="section">
+            <h2>Environment</h2>
+            <ul>
+              <li><strong>Date:</strong> Dec 1, 2024</li>
+              <li><strong>Browser:</strong> Chrome (latest version)</li>
+              <li><strong>Platform:</strong> macOS</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>Additional Notes</h2>
+            <p>
+              This issue may negatively impact conversion and should be
+              prioritized before the next enrollment cycle.
+            </p>
+          </div>
         </div>
       </div>
     </main>
