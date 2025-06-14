@@ -562,7 +562,7 @@ iframe {
 
 .section h2 {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 2rem 0 !important;
   color: #333;
 }
 
