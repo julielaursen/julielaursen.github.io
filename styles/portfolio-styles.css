@@ -173,6 +173,33 @@ h2 {
   box-sizing: border-box;
 }
 
+/* Hide extra link*/
+a[href="#year-link-2025"].hide-sm.hide-md.hide-lg.p-3.color-bg-accent-emphasis.color-fg-on-emphasis {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Make it visible on focus for keyboard users (optional but recommended) */
+a[href="#year-link-2025"].hide-sm.hide-md.hide-lg.p-3.color-bg-accent-emphasis.color-fg-on-emphasis:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  clip: auto;
+  background: white;
+  padding: 10px;
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .github-stats,
 .most-used-languages,
 .github-streak {
