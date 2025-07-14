@@ -1,6 +1,4 @@
-# Developer Portfolio Website
-
-THIS IS A WORK IN PROGRESS- UNFINISHED
+# My Portfolio Website
 
 ## Project Overview
 
