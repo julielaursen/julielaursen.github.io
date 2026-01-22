@@ -28,7 +28,6 @@ portfolio-test-automation/
 ├── images/
 ├── portfolios/
 │   ├── accessibility
-|   ├── developer
 |   ├── marketing
 |   ├── UX/UI
 ├── node_modules
@@ -43,7 +42,7 @@ portfolio-test-automation/
 - `images/`: Contains image files used in portfolio
 - `portfolios/`: Contains portfolios organized by role
 - `node_modules`: The directory containing all the packages and dependencies for the project. It is automatically generated when you run `npm install`.
-- `styles`: Contains CSS files that define the project's visual presentation
+```
 - `blog`: a collection of content including written work and videos
 - `index.html`: the entry point for the website
 - `package.json`: Defines project dependencies and scripts

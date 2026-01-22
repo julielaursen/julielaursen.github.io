@@ -3,6 +3,10 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0rem) {
+    .dark-mode .portfolio-card h3,
+    .dark-mode .portfolio-card p {
+      color: black;
+    }
   :root {
     --dark: #121212;
     --medium: #282828;
@@ -51,11 +55,12 @@
   }
 
   .dark-mode .footer-container {
-    color: black;
+    background: black;
+    color: black
   }
-
   .dark-mode .footer-content {
-    color: black;
+    background: transparent;
+    color: #fff
   }
 
   .dark-mode .social-media-icons {
